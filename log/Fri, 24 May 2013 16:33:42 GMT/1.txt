@@ -1,0 +1,8 @@
+gameSession.checkStroke(8,4,5,5,4);
+gameSession.checkStroke(3,2,5,3,4);
+gameSession.checkStroke(8,2,5,3,4);
+gameSession.checkStroke(3,3,4,5,2);
+gameSession.checkStroke(8,1,6,3,4);
+gameSession.checkStroke(3,4,5,3,4);
+
+{'status':'snapshot','next':'w','color':'w','field':[['white', 'nothing', 'white', 'nothing', 'white', 'nothing', 'white', 'nothing'], ['nothing', 'nothing', 'nothing', 'white', 'nothing', 'white', 'nothing', 'white'], ['white', 'nothing', 'nothing', 'nothing', 'nothing', 'nothing', 'white', 'nothing'], ['nothing', 'nothing', 'nothing', 'white', 'nothing', 'white', 'nothing', 'nothing'], ['nothing', 'nothing', 'nothing', 'nothing', 'black', 'nothing', 'nothing', 'nothing'], ['nothing', 'black', 'nothing', 'nothing', 'nothing', 'nothing', 'nothing', 'black'], ['black', 'nothing', 'black', 'nothing', 'black', 'nothing', 'black', 'nothing'], ['nothing', 'black', 'nothing', 'black', 'nothing', 'black', 'nothing', 'black']],'king':[['false', 'false', 'false', 'false', 'false', 'false', 'false', 'false'], ['false', 'false', 'false', 'false', 'false', 'false', 'false', 'false'], ['false', 'false', 'false', 'false', 'false', 'false', 'false', 'false'], ['false', 'false', 'false', 'false', 'false', 'false', 'false', 'false'], ['false', 'false', 'false', 'false', 'false', 'false', 'false', 'false'], ['false', 'false', 'false', 'false', 'false', 'false', 'false', 'false'], ['false', 'false', 'false', 'false', 'false', 'false', 'false', 'false'], ['false', 'false', 'false', 'false', 'false', 'false', 'false', 'false']]}
