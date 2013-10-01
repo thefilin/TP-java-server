@@ -29,7 +29,7 @@ public class FrontendTest {
         messageSystem = new MessageSystemImpl();
         frontend = new FrontendImpl(messageSystem);
     }
-
+   /*
     @Test
     public void test(){
         Request request = new Request(null, null);
@@ -42,4 +42,5 @@ public class FrontendTest {
             fail(e.getMessage());
         }
     }
+    */
 }

@@ -1,579 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><!-- EMMA v2.1.5320 (stable) report, generated Tue Oct 01 01:53:03 MSK 2013 -->
+<?xml version="1.0" encoding="UTF-8"?><!-- EMMA v2.1.5320 (stable) report, generated Tue Oct 01 14:32:20 MSK 2013 -->
 
 <report>
   <stats>
-    <packages value="13"/>
-    <classes value="57"/>
-    <methods value="355"/>
-    <srcfiles value="53"/>
-    <srclines value="1760"/>
+    <packages value="14"/>
+    <classes value="58"/>
+    <methods value="357"/>
+    <srcfiles value="54"/>
+    <srclines value="1796"/>
   </stats>
   <data>
     <all name="all classes">
-      <coverage type="class, %" value="32%  (18/57)"/>
-      <coverage type="method, %" value="16%  (58/355)"/>
-      <coverage type="block, %" value="11%  (908/8167)"/>
-      <coverage type="line, %" value="12%  (204,1/1760)"/>
+      <coverage type="class, %" value="38%  (22/58)"/>
+      <coverage type="method, %" value="40%  (144/357)"/>
+      <coverage type="block, %" value="34%  (2814/8327)"/>
+      <coverage type="line, %" value="29%  (514,6/1796)"/>
 
-      <package name="chat">
-        <coverage type="class, %" value="0%   (0/4)"/>
-        <coverage type="method, %" value="0%   (0/18)"/>
-        <coverage type="block, %" value="0%   (0/226)"/>
-        <coverage type="line, %" value="0%   (0/65)"/>
-
-        <srcfile name="ChatMessage.java">
-          <coverage type="class, %" value="0%   (0/1)"/>
-          <coverage type="method, %" value="0%   (0/4)"/>
-          <coverage type="block, %" value="0%   (0/32)"/>
-          <coverage type="line, %" value="0%   (0/7)"/>
-
-          <class name="ChatMessage">
-            <coverage type="class, %" value="0%   (0/1)"/>
-            <coverage type="method, %" value="0%   (0/4)"/>
-            <coverage type="block, %" value="0%   (0/32)"/>
-            <coverage type="line, %" value="0%   (0/7)"/>
-
-            <method name="ChatMessage (String, String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/9)"/>
-              <coverage type="line, %" value="0%   (0/4)"/>
-            </method>
-            <method name="getMessage (): String">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getSender (): String">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="json (): String">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/17)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-          </class>
-        </srcfile>
-        <srcfile name="ChatWSImpl.java">
-          <coverage type="class, %" value="0%   (0/1)"/>
-          <coverage type="method, %" value="0%   (0/5)"/>
-          <coverage type="block, %" value="0%   (0/90)"/>
-          <coverage type="line, %" value="0%   (0/29)"/>
-
-          <class name="ChatWSImpl">
-            <coverage type="class, %" value="0%   (0/1)"/>
-            <coverage type="method, %" value="0%   (0/5)"/>
-            <coverage type="block, %" value="0%   (0/90)"/>
-            <coverage type="line, %" value="0%   (0/29)"/>
-
-            <method name="ChatWSImpl (): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="addMessageToChat (String, String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/9)"/>
-              <coverage type="line, %" value="0%   (0/4)"/>
-            </method>
-            <method name="addNewChater (String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="onWebSocketText (String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/67)"/>
-              <coverage type="line, %" value="0%   (0/17)"/>
-            </method>
-            <method name="sendMessage (String, String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/7)"/>
-              <coverage type="line, %" value="0%   (0/4)"/>
-            </method>
-          </class>
-        </srcfile>
-        <srcfile name="ChatWSServletImpl.java">
-          <coverage type="class, %" value="0%   (0/1)"/>
-          <coverage type="method, %" value="0%   (0/2)"/>
-          <coverage type="block, %" value="0%   (0/7)"/>
-          <coverage type="line, %" value="0%   (0/4)"/>
-
-          <class name="ChatWSServletImpl">
-            <coverage type="class, %" value="0%   (0/1)"/>
-            <coverage type="method, %" value="0%   (0/2)"/>
-            <coverage type="block, %" value="0%   (0/7)"/>
-            <coverage type="line, %" value="0%   (0/4)"/>
-
-            <method name="ChatWSServletImpl (): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="configure (WebSocketServletFactory): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-          </class>
-        </srcfile>
-        <srcfile name="GameChatImpl.java">
-          <coverage type="class, %" value="0%   (0/1)"/>
-          <coverage type="method, %" value="0%   (0/7)"/>
-          <coverage type="block, %" value="0%   (0/97)"/>
-          <coverage type="line, %" value="0%   (0/25)"/>
-
-          <class name="GameChatImpl">
-            <coverage type="class, %" value="0%   (0/1)"/>
-            <coverage type="method, %" value="0%   (0/7)"/>
-            <coverage type="block, %" value="0%   (0/97)"/>
-            <coverage type="line, %" value="0%   (0/25)"/>
-
-            <method name="&lt;static initializer&gt;">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/9)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="GameChatImpl (MessageSystem): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/15)"/>
-              <coverage type="line, %" value="0%   (0/5)"/>
-            </method>
-            <method name="createChat (String, String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/25)"/>
-              <coverage type="line, %" value="0%   (0/6)"/>
-            </method>
-            <method name="getAddress (): Address">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getMessageSystem (): MessageSystem">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="run (): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/7)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="sendMessage (String, String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/35)"/>
-              <coverage type="line, %" value="0%   (0/8)"/>
-            </method>
-          </class>
-        </srcfile>
-      </package>
-      <package name="frontend">
-        <coverage type="class, %" value="0%   (0/7)"/>
-        <coverage type="method, %" value="0%   (0/63)"/>
-        <coverage type="block, %" value="0%   (0/1621)"/>
-        <coverage type="line, %" value="0%   (0/386)"/>
-
-        <srcfile name="FrontendImpl.java">
-          <coverage type="class, %" value="0%   (0/3)"/>
-          <coverage type="method, %" value="0%   (0/20)"/>
-          <coverage type="block, %" value="0%   (0/814)"/>
-          <coverage type="line, %" value="0%   (0/162)"/>
-
-          <class name="FrontendImpl">
-            <coverage type="class, %" value="0%   (0/1)"/>
-            <coverage type="method, %" value="0%   (0/15)"/>
-            <coverage type="block, %" value="0%   (0/706)"/>
-            <coverage type="line, %" value="0%   (0/161)"/>
-
-            <method name="FrontendImpl (MessageSystem): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/21)"/>
-              <coverage type="line, %" value="0%   (0/6)"/>
-            </method>
-            <method name="getAddress (): Address">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getStatistic (HttpServletResponse, UserDataSet): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/70)"/>
-              <coverage type="line, %" value="0%   (0/17)"/>
-            </method>
-            <method name="getStatus (HttpServletRequest, String, FrontendImpl$status, String): FrontendImpl$status">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/44)"/>
-              <coverage type="line, %" value="0%   (0/9)"/>
-            </method>
-            <method name="handle (String, Request, HttpServletRequest, HttpServletResponse): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/131)"/>
-              <coverage type="line, %" value="0%   (0/37)"/>
-            </method>
-            <method name="inWeb (String): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/36)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="isStatic (String): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/35)"/>
-              <coverage type="line, %" value="0%   (0/5)"/>
-            </method>
-            <method name="newUser (String, String): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/14)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="onHaveCookieAndPostStatus (String, String, UserDataSet, HttpServletRequest, HttpServletResponse): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/125)"/>
-              <coverage type="line, %" value="0%   (0/25)"/>
-            </method>
-            <method name="onHaveCookieStatus (String, UserDataSet, HttpServletResponse): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/28)"/>
-              <coverage type="line, %" value="0%   (0/7)"/>
-            </method>
-            <method name="onNothingStatus (String, String, UserDataSet, String, HttpServletResponse): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/41)"/>
-              <coverage type="line, %" value="0%   (0/12)"/>
-            </method>
-            <method name="onReadyStatus (String, String, UserDataSet, HttpServletResponse): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/81)"/>
-              <coverage type="line, %" value="0%   (0/20)"/>
-            </method>
-            <method name="onWaitingStatus (HttpServletResponse): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/6)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="prepareResponse (HttpServletResponse): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/15)"/>
-              <coverage type="line, %" value="0%   (0/5)"/>
-            </method>
-            <method name="sendPage (String, UserDataSet, HttpServletResponse): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/56)"/>
-              <coverage type="line, %" value="0%   (0/13)"/>
-            </method>
-          </class>
-          <class name="FrontendImpl$1">
-            <coverage type="class, %" value="0%   (0/1)"/>
-            <coverage type="method, %" value="0%   (0/1)"/>
-            <coverage type="block, %" value="0%   (0/40)"/>
-            <coverage type="line, %" value="0%   (0/1)"/>
-
-            <method name="&lt;static initializer&gt;">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/40)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-          </class>
-          <class name="FrontendImpl$status">
-            <coverage type="class, %" value="0%   (0/1)"/>
-            <coverage type="method, %" value="0%   (0/4)"/>
-            <coverage type="block, %" value="0%   (0/68)"/>
-            <coverage type="line, %" value="0%   (0/1)"/>
-
-            <method name="&lt;static initializer&gt;">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/54)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="FrontendImpl$status (String, int): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/5)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="valueOf (String): FrontendImpl$status">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/5)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="values (): FrontendImpl$status []">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-          </class>
-        </srcfile>
-        <srcfile name="MsgRemoveUserFromGM.java">
-          <coverage type="class, %" value="0%   (0/1)"/>
-          <coverage type="method, %" value="0%   (0/2)"/>
-          <coverage type="block, %" value="0%   (0/13)"/>
-          <coverage type="line, %" value="0%   (0/5)"/>
-
-          <class name="MsgRemoveUserFromGM">
-            <coverage type="class, %" value="0%   (0/1)"/>
-            <coverage type="method, %" value="0%   (0/2)"/>
-            <coverage type="block, %" value="0%   (0/13)"/>
-            <coverage type="line, %" value="0%   (0/5)"/>
-
-            <method name="MsgRemoveUserFromGM (Address, Address, String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/8)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="exec (GameMechanic): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/5)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-          </class>
-        </srcfile>
-        <srcfile name="UserDataImpl.java">
-          <coverage type="class, %" value="0%   (0/1)"/>
-          <coverage type="method, %" value="0%   (0/27)"/>
-          <coverage type="block, %" value="0%   (0/457)"/>
-          <coverage type="line, %" value="0%   (0/123)"/>
-
-          <class name="UserDataImpl">
-            <coverage type="class, %" value="0%   (0/1)"/>
-            <coverage type="method, %" value="0%   (0/27)"/>
-            <coverage type="block, %" value="0%   (0/457)"/>
-            <coverage type="line, %" value="0%   (0/123)"/>
-
-            <method name="&lt;static initializer&gt;">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/24)"/>
-              <coverage type="line, %" value="0%   (0/6)"/>
-            </method>
-            <method name="UserDataImpl (MessageSystem): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/14)"/>
-              <coverage type="line, %" value="0%   (0/5)"/>
-            </method>
-            <method name="ccu (): int">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="checkServerTime (String): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="checkUsers (int): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/28)"/>
-              <coverage type="line, %" value="0%   (0/7)"/>
-            </method>
-            <method name="containsSessionId (String): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="createGames (): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/53)"/>
-              <coverage type="line, %" value="0%   (0/12)"/>
-            </method>
-            <method name="exitedUser (UserDataSet): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/14)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="getAddress (): Address">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getChatWSBySessionId (String): RemoteEndpoint">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/13)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="getLogInUserBySessionId (String): UserDataSet">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/14)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="getOldUserSessionId (int): String">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/23)"/>
-              <coverage type="line, %" value="0%   (0/5)"/>
-            </method>
-            <method name="getSessionIdByUserId (int): String">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/27)"/>
-              <coverage type="line, %" value="0%   (0/5)"/>
-            </method>
-            <method name="getStartServerTime (): String">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/2)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getUserSessionBySessionId (String): UserDataSet">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/5)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getWSBySessionId (String): RemoteEndpoint">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/13)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="keepAlive (String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/14)"/>
-              <coverage type="line, %" value="0%   (0/6)"/>
-            </method>
-            <method name="partyEnd (int, int): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/85)"/>
-              <coverage type="line, %" value="0%   (0/25)"/>
-            </method>
-            <method name="playerWantToPlay (String, UserDataSet): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/6)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="putLogInUser (String, UserDataSet): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/6)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="putSessionIdAndChatWS (String, ChatWSImpl): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/15)"/>
-              <coverage type="line, %" value="0%   (0/4)"/>
-            </method>
-            <method name="putSessionIdAndUserSession (String, UserDataSet): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/6)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="putSessionIdAndWS (String, WebSocketImpl): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/6)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="removeUser (String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/19)"/>
-              <coverage type="line, %" value="0%   (0/6)"/>
-            </method>
-            <method name="removeUserFromGM (String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/16)"/>
-              <coverage type="line, %" value="0%   (0/4)"/>
-            </method>
-            <method name="run (): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/19)"/>
-              <coverage type="line, %" value="0%   (0/6)"/>
-            </method>
-            <method name="updateUserId (String, UserDataSet): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/21)"/>
-              <coverage type="line, %" value="0%   (0/7)"/>
-            </method>
-          </class>
-        </srcfile>
-        <srcfile name="WebSocketImpl.java">
-          <coverage type="class, %" value="0%   (0/1)"/>
-          <coverage type="method, %" value="0%   (0/12)"/>
-          <coverage type="block, %" value="0%   (0/321)"/>
-          <coverage type="line, %" value="0%   (0/89)"/>
-
-          <class name="WebSocketImpl">
-            <coverage type="class, %" value="0%   (0/1)"/>
-            <coverage type="method, %" value="0%   (0/12)"/>
-            <coverage type="block, %" value="0%   (0/321)"/>
-            <coverage type="line, %" value="0%   (0/89)"/>
-
-            <method name="&lt;static initializer&gt;">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="WebSocketImpl (): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/6)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="WebSocketImpl (boolean): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/14)"/>
-              <coverage type="line, %" value="0%   (0/5)"/>
-            </method>
-            <method name="addNewWS (String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/11)"/>
-              <coverage type="line, %" value="0%   (0/5)"/>
-            </method>
-            <method name="checkStroke (String, int, int, int, int, String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/33)"/>
-              <coverage type="line, %" value="0%   (0/7)"/>
-            </method>
-            <method name="doneSnapshot (int, Snapshot): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/21)"/>
-              <coverage type="line, %" value="0%   (0/8)"/>
-            </method>
-            <method name="getAddress (): Address">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="onWebSocketText (String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/107)"/>
-              <coverage type="line, %" value="0%   (0/23)"/>
-            </method>
-            <method name="run (): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/6)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="sendStroke (Map): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/51)"/>
-              <coverage type="line, %" value="0%   (0/14)"/>
-            </method>
-            <method name="setMS (MessageSystem): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="updateUsersColor (Map): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/63)"/>
-              <coverage type="line, %" value="0%   (0/18)"/>
-            </method>
-          </class>
-        </srcfile>
-        <srcfile name="WebSocketServletImpl.java">
-          <coverage type="class, %" value="0%   (0/1)"/>
-          <coverage type="method, %" value="0%   (0/2)"/>
-          <coverage type="block, %" value="0%   (0/16)"/>
-          <coverage type="line, %" value="0%   (0/7)"/>
-
-          <class name="WebSocketServletImpl">
-            <coverage type="class, %" value="0%   (0/1)"/>
-            <coverage type="method, %" value="0%   (0/2)"/>
-            <coverage type="block, %" value="0%   (0/16)"/>
-            <coverage type="line, %" value="0%   (0/7)"/>
-
-            <method name="WebSocketServletImpl (MessageSystem): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/9)"/>
-              <coverage type="line, %" value="0%   (0/4)"/>
-            </method>
-            <method name="configure (WebSocketServletFactory): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/7)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-          </class>
-        </srcfile>
-      </package>
       <package name="frontend.newOrLoginUser">
         <coverage type="class, %" value="0%   (0/3)"/>
         <coverage type="method, %" value="0%   (0/6)"/>
@@ -835,11 +276,601 @@
           </class>
         </srcfile>
       </package>
+      <package name="main">
+        <coverage type="class, %" value="0%   (0/1)"/>
+        <coverage type="method, %" value="0%   (0/2)"/>
+        <coverage type="block, %" value="0%   (0/160)"/>
+        <coverage type="line, %" value="0%   (0/36)"/>
+
+        <srcfile name="Main.java">
+          <coverage type="class, %" value="0%   (0/1)"/>
+          <coverage type="method, %" value="0%   (0/2)"/>
+          <coverage type="block, %" value="0%   (0/160)"/>
+          <coverage type="line, %" value="0%   (0/36)"/>
+
+          <class name="Main">
+            <coverage type="class, %" value="0%   (0/1)"/>
+            <coverage type="method, %" value="0%   (0/2)"/>
+            <coverage type="block, %" value="0%   (0/160)"/>
+            <coverage type="line, %" value="0%   (0/36)"/>
+
+            <method name="Main (): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="main (String []): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/157)"/>
+              <coverage type="line, %" value="0%   (0/35)"/>
+            </method>
+          </class>
+        </srcfile>
+      </package>
+      <package name="frontend">
+        <coverage type="class, %" value="14%  (1/7)"/>
+        <coverage type="method, %" value="19%  (12/63)"/>
+        <coverage type="block, %" value="7%   (111/1621)"/>
+        <coverage type="line, %" value="7%   (28/386)"/>
+
+        <srcfile name="FrontendImpl.java">
+          <coverage type="class, %" value="0%   (0/3)"/>
+          <coverage type="method, %" value="0%   (0/20)"/>
+          <coverage type="block, %" value="0%   (0/814)"/>
+          <coverage type="line, %" value="0%   (0/162)"/>
+
+          <class name="FrontendImpl">
+            <coverage type="class, %" value="0%   (0/1)"/>
+            <coverage type="method, %" value="0%   (0/15)"/>
+            <coverage type="block, %" value="0%   (0/706)"/>
+            <coverage type="line, %" value="0%   (0/161)"/>
+
+            <method name="FrontendImpl (MessageSystem): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/21)"/>
+              <coverage type="line, %" value="0%   (0/6)"/>
+            </method>
+            <method name="getAddress (): Address">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="getStatistic (HttpServletResponse, UserDataSet): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/70)"/>
+              <coverage type="line, %" value="0%   (0/17)"/>
+            </method>
+            <method name="getStatus (HttpServletRequest, String, FrontendImpl$status, String): FrontendImpl$status">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/44)"/>
+              <coverage type="line, %" value="0%   (0/9)"/>
+            </method>
+            <method name="handle (String, Request, HttpServletRequest, HttpServletResponse): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/131)"/>
+              <coverage type="line, %" value="0%   (0/37)"/>
+            </method>
+            <method name="inWeb (String): boolean">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/36)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="isStatic (String): boolean">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/35)"/>
+              <coverage type="line, %" value="0%   (0/5)"/>
+            </method>
+            <method name="newUser (String, String): boolean">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/14)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="onHaveCookieAndPostStatus (String, String, UserDataSet, HttpServletRequest, HttpServletResponse): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/125)"/>
+              <coverage type="line, %" value="0%   (0/25)"/>
+            </method>
+            <method name="onHaveCookieStatus (String, UserDataSet, HttpServletResponse): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/28)"/>
+              <coverage type="line, %" value="0%   (0/7)"/>
+            </method>
+            <method name="onNothingStatus (String, String, UserDataSet, String, HttpServletResponse): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/41)"/>
+              <coverage type="line, %" value="0%   (0/12)"/>
+            </method>
+            <method name="onReadyStatus (String, String, UserDataSet, HttpServletResponse): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/81)"/>
+              <coverage type="line, %" value="0%   (0/20)"/>
+            </method>
+            <method name="onWaitingStatus (HttpServletResponse): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/6)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="prepareResponse (HttpServletResponse): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/15)"/>
+              <coverage type="line, %" value="0%   (0/5)"/>
+            </method>
+            <method name="sendPage (String, UserDataSet, HttpServletResponse): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/56)"/>
+              <coverage type="line, %" value="0%   (0/13)"/>
+            </method>
+          </class>
+          <class name="FrontendImpl$1">
+            <coverage type="class, %" value="0%   (0/1)"/>
+            <coverage type="method, %" value="0%   (0/1)"/>
+            <coverage type="block, %" value="0%   (0/40)"/>
+            <coverage type="line, %" value="0%   (0/1)"/>
+
+            <method name="&lt;static initializer&gt;">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/40)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+          </class>
+          <class name="FrontendImpl$status">
+            <coverage type="class, %" value="0%   (0/1)"/>
+            <coverage type="method, %" value="0%   (0/4)"/>
+            <coverage type="block, %" value="0%   (0/68)"/>
+            <coverage type="line, %" value="0%   (0/1)"/>
+
+            <method name="&lt;static initializer&gt;">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/54)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="FrontendImpl$status (String, int): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/5)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="valueOf (String): FrontendImpl$status">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/5)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="values (): FrontendImpl$status []">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+          </class>
+        </srcfile>
+        <srcfile name="MsgRemoveUserFromGM.java">
+          <coverage type="class, %" value="0%   (0/1)"/>
+          <coverage type="method, %" value="0%   (0/2)"/>
+          <coverage type="block, %" value="0%   (0/13)"/>
+          <coverage type="line, %" value="0%   (0/5)"/>
+
+          <class name="MsgRemoveUserFromGM">
+            <coverage type="class, %" value="0%   (0/1)"/>
+            <coverage type="method, %" value="0%   (0/2)"/>
+            <coverage type="block, %" value="0%   (0/13)"/>
+            <coverage type="line, %" value="0%   (0/5)"/>
+
+            <method name="MsgRemoveUserFromGM (Address, Address, String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/8)"/>
+              <coverage type="line, %" value="0%   (0/3)"/>
+            </method>
+            <method name="exec (GameMechanic): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/5)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+          </class>
+        </srcfile>
+        <srcfile name="WebSocketImpl.java">
+          <coverage type="class, %" value="0%   (0/1)"/>
+          <coverage type="method, %" value="0%   (0/12)"/>
+          <coverage type="block, %" value="0%   (0/321)"/>
+          <coverage type="line, %" value="0%   (0/89)"/>
+
+          <class name="WebSocketImpl">
+            <coverage type="class, %" value="0%   (0/1)"/>
+            <coverage type="method, %" value="0%   (0/12)"/>
+            <coverage type="block, %" value="0%   (0/321)"/>
+            <coverage type="line, %" value="0%   (0/89)"/>
+
+            <method name="&lt;static initializer&gt;">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="WebSocketImpl (): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/6)"/>
+              <coverage type="line, %" value="0%   (0/3)"/>
+            </method>
+            <method name="WebSocketImpl (boolean): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/14)"/>
+              <coverage type="line, %" value="0%   (0/5)"/>
+            </method>
+            <method name="addNewWS (String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/11)"/>
+              <coverage type="line, %" value="0%   (0/5)"/>
+            </method>
+            <method name="checkStroke (String, int, int, int, int, String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/33)"/>
+              <coverage type="line, %" value="0%   (0/7)"/>
+            </method>
+            <method name="doneSnapshot (int, Snapshot): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/21)"/>
+              <coverage type="line, %" value="0%   (0/8)"/>
+            </method>
+            <method name="getAddress (): Address">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="onWebSocketText (String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/107)"/>
+              <coverage type="line, %" value="0%   (0/23)"/>
+            </method>
+            <method name="run (): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/6)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="sendStroke (Map): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/51)"/>
+              <coverage type="line, %" value="0%   (0/14)"/>
+            </method>
+            <method name="setMS (MessageSystem): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="updateUsersColor (Map): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/63)"/>
+              <coverage type="line, %" value="0%   (0/18)"/>
+            </method>
+          </class>
+        </srcfile>
+        <srcfile name="WebSocketServletImpl.java">
+          <coverage type="class, %" value="0%   (0/1)"/>
+          <coverage type="method, %" value="0%   (0/2)"/>
+          <coverage type="block, %" value="0%   (0/16)"/>
+          <coverage type="line, %" value="0%   (0/7)"/>
+
+          <class name="WebSocketServletImpl">
+            <coverage type="class, %" value="0%   (0/1)"/>
+            <coverage type="method, %" value="0%   (0/2)"/>
+            <coverage type="block, %" value="0%   (0/16)"/>
+            <coverage type="line, %" value="0%   (0/7)"/>
+
+            <method name="WebSocketServletImpl (MessageSystem): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/9)"/>
+              <coverage type="line, %" value="0%   (0/4)"/>
+            </method>
+            <method name="configure (WebSocketServletFactory): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/7)"/>
+              <coverage type="line, %" value="0%   (0/3)"/>
+            </method>
+          </class>
+        </srcfile>
+        <srcfile name="UserDataImpl.java">
+          <coverage type="class, %" value="100% (1/1)"/>
+          <coverage type="method, %" value="44%  (12/27)"/>
+          <coverage type="block, %" value="24%  (111/457)"/>
+          <coverage type="line, %" value="23%  (28/123)"/>
+
+          <class name="UserDataImpl">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="44%  (12/27)"/>
+            <coverage type="block, %" value="24%  (111/457)"/>
+            <coverage type="line, %" value="23%  (28/123)"/>
+
+            <method name="checkUsers (int): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/28)"/>
+              <coverage type="line, %" value="0%   (0/7)"/>
+            </method>
+            <method name="createGames (): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/53)"/>
+              <coverage type="line, %" value="0%   (0/12)"/>
+            </method>
+            <method name="exitedUser (UserDataSet): boolean">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/14)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="getChatWSBySessionId (String): RemoteEndpoint">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/13)"/>
+              <coverage type="line, %" value="0%   (0/3)"/>
+            </method>
+            <method name="getOldUserSessionId (int): String">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/23)"/>
+              <coverage type="line, %" value="0%   (0/5)"/>
+            </method>
+            <method name="getWSBySessionId (String): RemoteEndpoint">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/13)"/>
+              <coverage type="line, %" value="0%   (0/3)"/>
+            </method>
+            <method name="keepAlive (String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/14)"/>
+              <coverage type="line, %" value="0%   (0/6)"/>
+            </method>
+            <method name="partyEnd (int, int): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/85)"/>
+              <coverage type="line, %" value="0%   (0/25)"/>
+            </method>
+            <method name="playerWantToPlay (String, UserDataSet): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/6)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="putSessionIdAndChatWS (String, ChatWSImpl): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/15)"/>
+              <coverage type="line, %" value="0%   (0/4)"/>
+            </method>
+            <method name="putSessionIdAndWS (String, WebSocketImpl): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/6)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="removeUser (String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/19)"/>
+              <coverage type="line, %" value="0%   (0/6)"/>
+            </method>
+            <method name="removeUserFromGM (String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/16)"/>
+              <coverage type="line, %" value="0%   (0/4)"/>
+            </method>
+            <method name="run (): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/19)"/>
+              <coverage type="line, %" value="0%   (0/6)"/>
+            </method>
+            <method name="updateUserId (String, UserDataSet): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/21)"/>
+              <coverage type="line, %" value="0%   (0/7)"/>
+            </method>
+            <method name="getSessionIdByUserId (int): String">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="96%  (26/27)"/>
+              <coverage type="line, %" value="80%  (4/5)"/>
+            </method>
+            <method name="&lt;static initializer&gt;">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (24/24)"/>
+              <coverage type="line, %" value="100% (6/6)"/>
+            </method>
+            <method name="UserDataImpl (MessageSystem): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (14/14)"/>
+              <coverage type="line, %" value="100% (5/5)"/>
+            </method>
+            <method name="ccu (): int">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="checkServerTime (String): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (4/4)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="containsSessionId (String): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (4/4)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="getAddress (): Address">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="getLogInUserBySessionId (String): UserDataSet">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (14/14)"/>
+              <coverage type="line, %" value="100% (3/3)"/>
+            </method>
+            <method name="getStartServerTime (): String">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (2/2)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="getUserSessionBySessionId (String): UserDataSet">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (5/5)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="putLogInUser (String, UserDataSet): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (6/6)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
+            </method>
+            <method name="putSessionIdAndUserSession (String, UserDataSet): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (6/6)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
+            </method>
+          </class>
+        </srcfile>
+      </package>
+      <package name="chat">
+        <coverage type="class, %" value="25%  (1/4)"/>
+        <coverage type="method, %" value="22%  (4/18)"/>
+        <coverage type="block, %" value="14%  (32/226)"/>
+        <coverage type="line, %" value="11%  (7/65)"/>
+
+        <srcfile name="ChatWSImpl.java">
+          <coverage type="class, %" value="0%   (0/1)"/>
+          <coverage type="method, %" value="0%   (0/5)"/>
+          <coverage type="block, %" value="0%   (0/90)"/>
+          <coverage type="line, %" value="0%   (0/29)"/>
+
+          <class name="ChatWSImpl">
+            <coverage type="class, %" value="0%   (0/1)"/>
+            <coverage type="method, %" value="0%   (0/5)"/>
+            <coverage type="block, %" value="0%   (0/90)"/>
+            <coverage type="line, %" value="0%   (0/29)"/>
+
+            <method name="ChatWSImpl (): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="addMessageToChat (String, String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/9)"/>
+              <coverage type="line, %" value="0%   (0/4)"/>
+            </method>
+            <method name="addNewChater (String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="onWebSocketText (String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/67)"/>
+              <coverage type="line, %" value="0%   (0/17)"/>
+            </method>
+            <method name="sendMessage (String, String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/7)"/>
+              <coverage type="line, %" value="0%   (0/4)"/>
+            </method>
+          </class>
+        </srcfile>
+        <srcfile name="ChatWSServletImpl.java">
+          <coverage type="class, %" value="0%   (0/1)"/>
+          <coverage type="method, %" value="0%   (0/2)"/>
+          <coverage type="block, %" value="0%   (0/7)"/>
+          <coverage type="line, %" value="0%   (0/4)"/>
+
+          <class name="ChatWSServletImpl">
+            <coverage type="class, %" value="0%   (0/1)"/>
+            <coverage type="method, %" value="0%   (0/2)"/>
+            <coverage type="block, %" value="0%   (0/7)"/>
+            <coverage type="line, %" value="0%   (0/4)"/>
+
+            <method name="ChatWSServletImpl (): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="configure (WebSocketServletFactory): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+          </class>
+        </srcfile>
+        <srcfile name="GameChatImpl.java">
+          <coverage type="class, %" value="0%   (0/1)"/>
+          <coverage type="method, %" value="0%   (0/7)"/>
+          <coverage type="block, %" value="0%   (0/97)"/>
+          <coverage type="line, %" value="0%   (0/25)"/>
+
+          <class name="GameChatImpl">
+            <coverage type="class, %" value="0%   (0/1)"/>
+            <coverage type="method, %" value="0%   (0/7)"/>
+            <coverage type="block, %" value="0%   (0/97)"/>
+            <coverage type="line, %" value="0%   (0/25)"/>
+
+            <method name="&lt;static initializer&gt;">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/9)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="GameChatImpl (MessageSystem): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/15)"/>
+              <coverage type="line, %" value="0%   (0/5)"/>
+            </method>
+            <method name="createChat (String, String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/25)"/>
+              <coverage type="line, %" value="0%   (0/6)"/>
+            </method>
+            <method name="getAddress (): Address">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="getMessageSystem (): MessageSystem">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="run (): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/7)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="sendMessage (String, String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/35)"/>
+              <coverage type="line, %" value="0%   (0/8)"/>
+            </method>
+          </class>
+        </srcfile>
+        <srcfile name="ChatMessage.java">
+          <coverage type="class, %" value="100% (1/1)"/>
+          <coverage type="method, %" value="100% (4/4)"/>
+          <coverage type="block, %" value="100% (32/32)"/>
+          <coverage type="line, %" value="100% (7/7)"/>
+
+          <class name="ChatMessage">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (4/4)"/>
+            <coverage type="block, %" value="100% (32/32)"/>
+            <coverage type="line, %" value="100% (7/7)"/>
+
+            <method name="ChatMessage (String, String): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (9/9)"/>
+              <coverage type="line, %" value="100% (4/4)"/>
+            </method>
+            <method name="getMessage (): String">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="getSender (): String">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="json (): String">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (17/17)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+          </class>
+        </srcfile>
+      </package>
       <package name="dbService">
         <coverage type="class, %" value="20%  (1/5)"/>
-        <coverage type="method, %" value="6%   (2/35)"/>
-        <coverage type="block, %" value="4%   (30/842)"/>
-        <coverage type="line, %" value="4%   (11/246)"/>
+        <coverage type="method, %" value="43%  (15/35)"/>
+        <coverage type="block, %" value="16%  (136/842)"/>
+        <coverage type="line, %" value="18%  (45/246)"/>
 
         <srcfile name="DBServiceImpl.java">
           <coverage type="class, %" value="0%   (0/2)"/>
@@ -987,836 +1018,129 @@
         </srcfile>
         <srcfile name="UserDataSet.java">
           <coverage type="class, %" value="100% (1/1)"/>
-          <coverage type="method, %" value="12%  (2/16)"/>
-          <coverage type="block, %" value="22%  (30/139)"/>
-          <coverage type="line, %" value="24%  (11/46)"/>
+          <coverage type="method, %" value="94%  (15/16)"/>
+          <coverage type="block, %" value="98%  (136/139)"/>
+          <coverage type="line, %" value="98%  (45/46)"/>
 
           <class name="UserDataSet">
             <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="12%  (2/16)"/>
-            <coverage type="block, %" value="22%  (30/139)"/>
-            <coverage type="line, %" value="24%  (11/46)"/>
+            <coverage type="method, %" value="94%  (15/16)"/>
+            <coverage type="block, %" value="98%  (136/139)"/>
+            <coverage type="line, %" value="98%  (45/46)"/>
 
-            <method name="UserDataSet (): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/18)"/>
-              <coverage type="line, %" value="0%   (0/7)"/>
-            </method>
-            <method name="getColor (): String">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
             <method name="getLastVisit (): long">
               <coverage type="method, %" value="0%   (0/1)"/>
               <coverage type="block, %" value="0%   (0/3)"/>
               <coverage type="line, %" value="0%   (0/1)"/>
             </method>
-            <method name="getLoseQuantity (): int">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getNick (): String">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getPostStatus (): int">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getRating (): int">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getWinQuantity (): int">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="lose (int): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/13)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="makeLike (UserDataSet): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/32)"/>
-              <coverage type="line, %" value="0%   (0/9)"/>
-            </method>
-            <method name="setColor (String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="setPostStatus (int): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="visit (): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="win (int): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/13)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
+            <method name="UserDataSet (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (18/18)"/>
+              <coverage type="line, %" value="100% (7/7)"/>
             </method>
             <method name="UserDataSet (int, String, int, int, int): void">
               <coverage type="method, %" value="100% (1/1)"/>
               <coverage type="block, %" value="100% (27/27)"/>
               <coverage type="line, %" value="100% (10/10)"/>
             </method>
+            <method name="getColor (): String">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
             <method name="getId (): int">
               <coverage type="method, %" value="100% (1/1)"/>
               <coverage type="block, %" value="100% (3/3)"/>
               <coverage type="line, %" value="100% (1/1)"/>
             </method>
-          </class>
-        </srcfile>
-      </package>
-      <package name="gameClasses">
-        <coverage type="class, %" value="50%  (2/4)"/>
-        <coverage type="method, %" value="7%   (3/43)"/>
-        <coverage type="block, %" value="5%   (48/897)"/>
-        <coverage type="line, %" value="2%   (4,1/173)"/>
-
-        <srcfile name="Snapshot.java">
-          <coverage type="class, %" value="0%   (0/1)"/>
-          <coverage type="method, %" value="0%   (0/3)"/>
-          <coverage type="block, %" value="0%   (0/394)"/>
-          <coverage type="line, %" value="0%   (0/73)"/>
-
-          <class name="Snapshot">
-            <coverage type="class, %" value="0%   (0/1)"/>
-            <coverage type="method, %" value="0%   (0/3)"/>
-            <coverage type="block, %" value="0%   (0/394)"/>
-            <coverage type="line, %" value="0%   (0/73)"/>
-
-            <method name="Snapshot (Field [][], char, int, char): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/42)"/>
-              <coverage type="line, %" value="0%   (0/9)"/>
-            </method>
-            <method name="toString (): String">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/176)"/>
-              <coverage type="line, %" value="0%   (0/32)"/>
-            </method>
-            <method name="toStringTest (): String">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/176)"/>
-              <coverage type="line, %" value="0%   (0/32)"/>
-            </method>
-          </class>
-        </srcfile>
-        <srcfile name="Stroke.java">
-          <coverage type="class, %" value="0%   (0/1)"/>
-          <coverage type="method, %" value="0%   (0/25)"/>
-          <coverage type="block, %" value="0%   (0/381)"/>
-          <coverage type="line, %" value="0%   (0/71)"/>
-
-          <class name="Stroke">
-            <coverage type="class, %" value="0%   (0/1)"/>
-            <coverage type="method, %" value="0%   (0/25)"/>
-            <coverage type="block, %" value="0%   (0/381)"/>
-            <coverage type="line, %" value="0%   (0/71)"/>
-
-            <method name="Stroke (): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/24)"/>
-              <coverage type="line, %" value="0%   (0/5)"/>
-            </method>
-            <method name="Stroke (String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/27)"/>
-              <coverage type="line, %" value="0%   (0/6)"/>
-            </method>
-            <method name="Stroke (Stroke): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/40)"/>
-              <coverage type="line, %" value="0%   (0/11)"/>
-            </method>
-            <method name="Stroke (int, int, int, int, String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/27)"/>
-              <coverage type="line, %" value="0%   (0/7)"/>
-            </method>
-            <method name="Stroke (int, int, int, int, String, String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/30)"/>
-              <coverage type="line, %" value="0%   (0/8)"/>
-            </method>
-            <method name="Stroke (int, int, int, int, String, String, char): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/33)"/>
-              <coverage type="line, %" value="0%   (0/9)"/>
-            </method>
-            <method name="clear (): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/22)"/>
-              <coverage type="line, %" value="0%   (0/4)"/>
-            </method>
-            <method name="fullSet (int, int, int, int): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/13)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="getColor (): String">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getFrom_X (): int">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getFrom_Y (): int">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getInverse (): Stroke">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/54)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="getNext (): char">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getStatus (): String">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getTo_X (): int">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getTo_Y (): int">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="isEmpty (): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/20)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="setColor (String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="setFrom_X (int): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="setFrom_Y (int): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="setNext (char): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="setStatus (String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="setTo_X (int): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="setTo_Y (int): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="toString (): String">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/42)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-          </class>
-        </srcfile>
-        <srcfile name="Field.java">
-          <coverage type="class, %" value="100% (2/2)"/>
-          <coverage type="method, %" value="20%  (3/15)"/>
-          <coverage type="block, %" value="39%  (48/122)"/>
-          <coverage type="line, %" value="14%  (4,1/29)"/>
-
-          <class name="Field">
-            <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="9%   (1/11)"/>
-            <coverage type="block, %" value="12%  (9/74)"/>
-            <coverage type="line, %" value="12%  (3,3/28)"/>
-
-            <method name="Field (): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/9)"/>
-              <coverage type="line, %" value="0%   (0/4)"/>
-            </method>
-            <method name="Field (Field): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/14)"/>
-              <coverage type="line, %" value="0%   (0/5)"/>
-            </method>
-            <method name="clear (): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/7)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="getType (): Field$checker">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="isEmpty (): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/8)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="isKing (): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="make (Field): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/9)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="makeKing (): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="makeNotKing (): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="setType (Field$checker): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="Field (Field$checker): void">
+            <method name="getLoseQuantity (): int">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (9/9)"/>
-              <coverage type="line, %" value="100% (4/4)"/>
-            </method>
-          </class>
-          <class name="Field$checker">
-            <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="50%  (2/4)"/>
-            <coverage type="block, %" value="81%  (39/48)"/>
-            <coverage type="line, %" value="81%  (0,8/1)"/>
-
-            <method name="valueOf (String): Field$checker">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/5)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="values (): Field$checker []">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="&lt;static initializer&gt;">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (34/34)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
               <coverage type="line, %" value="100% (1/1)"/>
             </method>
-            <method name="Field$checker (String, int): void">
+            <method name="getNick (): String">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (5/5)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
               <coverage type="line, %" value="100% (1/1)"/>
             </method>
-          </class>
-        </srcfile>
-      </package>
-      <package name="gameMechanic">
-        <coverage type="class, %" value="100% (2/2)"/>
-        <coverage type="method, %" value="16%  (14/85)"/>
-        <coverage type="block, %" value="12%  (307/2666)"/>
-        <coverage type="line, %" value="14%  (61/424)"/>
-
-        <srcfile name="GameSession.java">
-          <coverage type="class, %" value="100% (1/1)"/>
-          <coverage type="method, %" value="10%  (7/67)"/>
-          <coverage type="block, %" value="9%   (183/2071)"/>
-          <coverage type="line, %" value="11%  (32,5/296)"/>
-
-          <class name="GameSession">
-            <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="10%  (7/67)"/>
-            <coverage type="block, %" value="9%   (183/2071)"/>
-            <coverage type="line, %" value="11%  (32,5/296)"/>
-
-            <method name="GameSession (int, int, int, int): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/26)"/>
-              <coverage type="line, %" value="0%   (0/7)"/>
-            </method>
-            <method name="abs (int): int">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="becameKing (int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/24)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="blackLose (): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/11)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="blackWin (long): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/19)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="canEat (Field$checker): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/33)"/>
-              <coverage type="line, %" value="0%   (0/5)"/>
-            </method>
-            <method name="canEat (int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/15)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="canMove (Field$checker): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/45)"/>
-              <coverage type="line, %" value="0%   (0/7)"/>
-            </method>
-            <method name="canMove (int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/36)"/>
-              <coverage type="line, %" value="0%   (0/4)"/>
-            </method>
-            <method name="canMoveLeftDown (int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/17)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="canMoveLeftUp (int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/22)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="canMoveRightDown (int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/22)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="canMoveRightUp (int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/27)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="checkEating (int, int, int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/18)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="checkKingOtherEating (int, int, int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/71)"/>
-              <coverage type="line, %" value="0%   (0/11)"/>
-            </method>
-            <method name="checkOtherEatingOpportunity (int, int, int, int, int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/57)"/>
-              <coverage type="line, %" value="0%   (0/7)"/>
-            </method>
-            <method name="checkOtherEatingOpportunityForField (int, int, int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/36)"/>
-              <coverage type="line, %" value="0%   (0/8)"/>
-            </method>
-            <method name="checkStroke (int, int, int, int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/139)"/>
-              <coverage type="line, %" value="0%   (0/22)"/>
-            </method>
-            <method name="checking (int, int, int, int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/38)"/>
-              <coverage type="line, %" value="0%   (0/11)"/>
-            </method>
-            <method name="clearField (int, int): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/8)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="eat (int, int, int, int): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/71)"/>
-              <coverage type="line, %" value="0%   (0/11)"/>
-            </method>
-            <method name="eating (int, int, int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/35)"/>
-              <coverage type="line, %" value="0%   (0/5)"/>
-            </method>
-            <method name="fieldIsEmpty (int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/8)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="fieldIsKing (int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/8)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getAnotherColor (Field$checker): Field$checker">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/12)"/>
-              <coverage type="line, %" value="0%   (0/5)"/>
-            </method>
-            <method name="getAnotherId (int): int">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/8)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getBlackQuantity (): int">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getField (int, int): Field">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/7)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getFieldType (int, int): Field$checker">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/8)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getFields (): int []">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/105)"/>
-              <coverage type="line, %" value="0%   (0/17)"/>
-            </method>
-            <method name="getNext (): char">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/9)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="getPlayerColor (int): Field$checker">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/8)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="getSnapshot (int): Snapshot">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/12)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="getWhiteQuantity (): int">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getWinnerId (): int">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getWinnerId (long): int">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/22)"/>
-              <coverage type="line, %" value="0%   (0/5)"/>
-            </method>
-            <method name="inBorder (int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/13)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="kingCanEat (int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/24)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="kingCanEatLeftDown (int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/65)"/>
-              <coverage type="line, %" value="0%   (0/7)"/>
-            </method>
-            <method name="kingCanEatLeftUp (int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/69)"/>
-              <coverage type="line, %" value="0%   (0/7)"/>
-            </method>
-            <method name="kingCanEatRightDown (int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/82)"/>
-              <coverage type="line, %" value="0%   (0/9)"/>
-            </method>
-            <method name="kingCanEatRightUp (int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/73)"/>
-              <coverage type="line, %" value="0%   (0/7)"/>
-            </method>
-            <method name="kingEating (int, int, int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/69)"/>
-              <coverage type="line, %" value="0%   (0/11)"/>
-            </method>
-            <method name="makeEatingStroke (int, int, int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/20)"/>
-              <coverage type="line, %" value="0%   (0/4)"/>
-            </method>
-            <method name="makeKing (int, int): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/8)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="makeUsualStroke (int, int, int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/28)"/>
-              <coverage type="line, %" value="0%   (0/7)"/>
-            </method>
-            <method name="move (int, int, int, int): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/18)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="normal (int): int">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/10)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="pawnCanEat (int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/24)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="pawnCanEatLeftDown (int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/36)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="pawnCanEatLeftUp (int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/40)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="pawnCanEatRightDown (int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/40)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="pawnCanEatRightUp (int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/44)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="pawnEating (int, int, int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/56)"/>
-              <coverage type="line, %" value="0%   (0/5)"/>
-            </method>
-            <method name="returnSnapshot (char): Snapshot">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/12)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="saveAILog (String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/30)"/>
-              <coverage type="line, %" value="0%   (0/4)"/>
-            </method>
-            <method name="saveLog (int): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/61)"/>
-              <coverage type="line, %" value="0%   (0/8)"/>
-            </method>
-            <method name="standartCheck (int, int, int, int): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/46)"/>
-              <coverage type="line, %" value="0%   (0/7)"/>
-            </method>
-            <method name="whiteLose (): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/11)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="whiteWin (long): boolean">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/19)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="&lt;static initializer&gt;">
+            <method name="getPostStatus (): int">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (22/22)"/>
-              <coverage type="line, %" value="100% (5/5)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
             </method>
-            <method name="GameSession (int, int): void">
+            <method name="getRating (): int">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (25/25)"/>
-              <coverage type="line, %" value="100% (7/7)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
             </method>
-            <method name="descInit (int, int): void">
+            <method name="getWinQuantity (): int">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (75/75)"/>
-              <coverage type="line, %" value="100% (11/11)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
             </method>
-            <method name="generateEmptyLine (int): void">
+            <method name="lose (int): void">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (15/15)"/>
+              <coverage type="block, %" value="100% (13/13)"/>
               <coverage type="line, %" value="100% (3/3)"/>
             </method>
-            <method name="generateField (int, int, Field$checker): void">
+            <method name="makeLike (UserDataSet): void">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (11/11)"/>
+              <coverage type="block, %" value="100% (32/32)"/>
+              <coverage type="line, %" value="100% (9/9)"/>
+            </method>
+            <method name="setColor (String): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (4/4)"/>
               <coverage type="line, %" value="100% (2/2)"/>
             </method>
-            <method name="generateLine (int, Field$checker, boolean): void">
+            <method name="setPostStatus (int): void">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (26/26)"/>
-              <coverage type="line, %" value="100% (5/5)"/>
+              <coverage type="block, %" value="100% (4/4)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
             </method>
-            <method name="isOdd (int): boolean">
+            <method name="visit (): void">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (9/9)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (4/4)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
             </method>
-          </class>
-        </srcfile>
-        <srcfile name="GameMechanicImpl.java">
-          <coverage type="class, %" value="100% (1/1)"/>
-          <coverage type="method, %" value="39%  (7/18)"/>
-          <coverage type="block, %" value="21%  (124/595)"/>
-          <coverage type="line, %" value="22%  (28,6/128)"/>
-
-          <class name="GameMechanicImpl">
-            <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="39%  (7/18)"/>
-            <coverage type="block, %" value="21%  (124/595)"/>
-            <coverage type="line, %" value="22%  (28,6/128)"/>
-
-            <method name="checkStroke (int, Stroke): Map">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/138)"/>
-              <coverage type="line, %" value="0%   (0/28)"/>
-            </method>
-            <method name="createChat (String, String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/20)"/>
-              <coverage type="line, %" value="0%   (0/4)"/>
-            </method>
-            <method name="createGame (String, String, Map, Map): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/55)"/>
-              <coverage type="line, %" value="0%   (0/11)"/>
-            </method>
-            <method name="getSnapshot (int): Snapshot">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/11)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="moveUser (Map): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/31)"/>
-              <coverage type="line, %" value="0%   (0/7)"/>
-            </method>
-            <method name="removeDeadGames (): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/34)"/>
-              <coverage type="line, %" value="0%   (0/9)"/>
-            </method>
-            <method name="removeUser (String): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/6)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="run (): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/9)"/>
-              <coverage type="line, %" value="0%   (0/3)"/>
-            </method>
-            <method name="sendResultStroke (GameSession, int): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/72)"/>
-              <coverage type="line, %" value="0%   (0/14)"/>
-            </method>
-            <method name="sendSnapshot (int): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/24)"/>
-              <coverage type="line, %" value="0%   (0/5)"/>
-            </method>
-            <method name="updateUsersRating (int, int): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/20)"/>
-              <coverage type="line, %" value="0%   (0/4)"/>
-            </method>
-            <method name="removeRepeatUsers (Map): void">
+            <method name="win (int): void">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="35%  (8/23)"/>
-              <coverage type="line, %" value="60%  (3/5)"/>
-            </method>
-            <method name="createGames (Map): Map">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="63%  (49/78)"/>
-              <coverage type="line, %" value="60%  (9,6/16)"/>
-            </method>
-            <method name="removeAlreadyInGameUsers (Map): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="80%  (28/35)"/>
-              <coverage type="line, %" value="75%  (6/8)"/>
-            </method>
-            <method name="GameMechanicImpl (MessageSystem): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (26/26)"/>
-              <coverage type="line, %" value="100% (7/7)"/>
-            </method>
-            <method name="getAddress (): Address">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (3/3)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
-            </method>
-            <method name="getMessageSystem (): MessageSystem">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (3/3)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
-            </method>
-            <method name="randomMod2 (): int">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (7/7)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (13/13)"/>
+              <coverage type="line, %" value="100% (3/3)"/>
             </method>
           </class>
         </srcfile>
       </package>
       <package name="utils">
         <coverage type="class, %" value="56%  (5/9)"/>
-        <coverage type="method, %" value="36%  (15/42)"/>
-        <coverage type="block, %" value="20%  (222/1108)"/>
-        <coverage type="line, %" value="22%  (56/249)"/>
+        <coverage type="method, %" value="38%  (16/42)"/>
+        <coverage type="block, %" value="22%  (243/1108)"/>
+        <coverage type="line, %" value="24%  (59/249)"/>
 
+        <srcfile name="Caster.java">
+          <coverage type="class, %" value="0%   (0/1)"/>
+          <coverage type="method, %" value="0%   (0/2)"/>
+          <coverage type="block, %" value="0%   (0/28)"/>
+          <coverage type="line, %" value="0%   (0/8)"/>
+
+          <class name="Caster">
+            <coverage type="class, %" value="0%   (0/1)"/>
+            <coverage type="method, %" value="0%   (0/2)"/>
+            <coverage type="block, %" value="0%   (0/28)"/>
+            <coverage type="line, %" value="0%   (0/8)"/>
+
+            <method name="Caster (): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="castKeysToStrings (Map): String []">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/25)"/>
+              <coverage type="line, %" value="0%   (0/7)"/>
+            </method>
+          </class>
+        </srcfile>
         <srcfile name="CookieDescriptor.java">
           <coverage type="class, %" value="0%   (0/1)"/>
           <coverage type="method, %" value="0%   (0/2)"/>
@@ -1838,40 +1162,6 @@
               <coverage type="method, %" value="0%   (0/1)"/>
               <coverage type="block, %" value="0%   (0/15)"/>
               <coverage type="line, %" value="0%   (0/4)"/>
-            </method>
-          </class>
-        </srcfile>
-        <srcfile name="SHA2.java">
-          <coverage type="class, %" value="0%   (0/1)"/>
-          <coverage type="method, %" value="0%   (0/4)"/>
-          <coverage type="block, %" value="0%   (0/56)"/>
-          <coverage type="line, %" value="0%   (0/14)"/>
-
-          <class name="SHA2">
-            <coverage type="class, %" value="0%   (0/1)"/>
-            <coverage type="method, %" value="0%   (0/4)"/>
-            <coverage type="block, %" value="0%   (0/56)"/>
-            <coverage type="line, %" value="0%   (0/14)"/>
-
-            <method name="SHA2 (): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getSHA2 (String): String">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/45)"/>
-              <coverage type="line, %" value="0%   (0/11)"/>
-            </method>
-            <method name="getSHA2 (int): String">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getSHA2 (long): String">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/4)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
             </method>
           </class>
         </srcfile>
@@ -2090,27 +1380,37 @@
             </method>
           </class>
         </srcfile>
-        <srcfile name="Caster.java">
+        <srcfile name="SHA2.java">
           <coverage type="class, %" value="100% (1/1)"/>
-          <coverage type="method, %" value="50%  (1/2)"/>
-          <coverage type="block, %" value="89%  (25/28)"/>
-          <coverage type="line, %" value="88%  (7/8)"/>
+          <coverage type="method, %" value="50%  (2/4)"/>
+          <coverage type="block, %" value="82%  (46/56)"/>
+          <coverage type="line, %" value="71%  (10/14)"/>
 
-          <class name="Caster">
+          <class name="SHA2">
             <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="50%  (1/2)"/>
-            <coverage type="block, %" value="89%  (25/28)"/>
-            <coverage type="line, %" value="88%  (7/8)"/>
+            <coverage type="method, %" value="50%  (2/4)"/>
+            <coverage type="block, %" value="82%  (46/56)"/>
+            <coverage type="line, %" value="71%  (10/14)"/>
 
-            <method name="Caster (): void">
+            <method name="SHA2 (): void">
               <coverage type="method, %" value="0%   (0/1)"/>
               <coverage type="block, %" value="0%   (0/3)"/>
               <coverage type="line, %" value="0%   (0/1)"/>
             </method>
-            <method name="castKeysToStrings (Map): String []">
+            <method name="getSHA2 (int): String">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="getSHA2 (String): String">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (25/25)"/>
-              <coverage type="line, %" value="100% (7/7)"/>
+              <coverage type="block, %" value="93%  (42/45)"/>
+              <coverage type="line, %" value="82%  (9/11)"/>
+            </method>
+            <method name="getSHA2 (long): String">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (4/4)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
             </method>
           </class>
         </srcfile>
@@ -2154,11 +1454,742 @@
           </class>
         </srcfile>
       </package>
+      <package name="gameClasses">
+        <coverage type="class, %" value="75%  (3/4)"/>
+        <coverage type="method, %" value="30%  (13/43)"/>
+        <coverage type="block, %" value="36%  (319/897)"/>
+        <coverage type="line, %" value="37%  (64,8/173)"/>
+
+        <srcfile name="Stroke.java">
+          <coverage type="class, %" value="0%   (0/1)"/>
+          <coverage type="method, %" value="0%   (0/25)"/>
+          <coverage type="block, %" value="0%   (0/381)"/>
+          <coverage type="line, %" value="0%   (0/71)"/>
+
+          <class name="Stroke">
+            <coverage type="class, %" value="0%   (0/1)"/>
+            <coverage type="method, %" value="0%   (0/25)"/>
+            <coverage type="block, %" value="0%   (0/381)"/>
+            <coverage type="line, %" value="0%   (0/71)"/>
+
+            <method name="Stroke (): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/24)"/>
+              <coverage type="line, %" value="0%   (0/5)"/>
+            </method>
+            <method name="Stroke (String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/27)"/>
+              <coverage type="line, %" value="0%   (0/6)"/>
+            </method>
+            <method name="Stroke (Stroke): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/40)"/>
+              <coverage type="line, %" value="0%   (0/11)"/>
+            </method>
+            <method name="Stroke (int, int, int, int, String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/27)"/>
+              <coverage type="line, %" value="0%   (0/7)"/>
+            </method>
+            <method name="Stroke (int, int, int, int, String, String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/30)"/>
+              <coverage type="line, %" value="0%   (0/8)"/>
+            </method>
+            <method name="Stroke (int, int, int, int, String, String, char): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/33)"/>
+              <coverage type="line, %" value="0%   (0/9)"/>
+            </method>
+            <method name="clear (): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/22)"/>
+              <coverage type="line, %" value="0%   (0/4)"/>
+            </method>
+            <method name="fullSet (int, int, int, int): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/13)"/>
+              <coverage type="line, %" value="0%   (0/3)"/>
+            </method>
+            <method name="getColor (): String">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="getFrom_X (): int">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="getFrom_Y (): int">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="getInverse (): Stroke">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/54)"/>
+              <coverage type="line, %" value="0%   (0/3)"/>
+            </method>
+            <method name="getNext (): char">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="getStatus (): String">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="getTo_X (): int">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="getTo_Y (): int">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="isEmpty (): boolean">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/20)"/>
+              <coverage type="line, %" value="0%   (0/3)"/>
+            </method>
+            <method name="setColor (String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="setFrom_X (int): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="setFrom_Y (int): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="setNext (char): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="setStatus (String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="setTo_X (int): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="setTo_Y (int): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="toString (): String">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/42)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+          </class>
+        </srcfile>
+        <srcfile name="Snapshot.java">
+          <coverage type="class, %" value="100% (1/1)"/>
+          <coverage type="method, %" value="67%  (2/3)"/>
+          <coverage type="block, %" value="54%  (214/394)"/>
+          <coverage type="line, %" value="55%  (40/73)"/>
+
+          <class name="Snapshot">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="67%  (2/3)"/>
+            <coverage type="block, %" value="54%  (214/394)"/>
+            <coverage type="line, %" value="55%  (40/73)"/>
+
+            <method name="toString (): String">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/176)"/>
+              <coverage type="line, %" value="0%   (0/32)"/>
+            </method>
+            <method name="toStringTest (): String">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="98%  (172/176)"/>
+              <coverage type="line, %" value="97%  (31/32)"/>
+            </method>
+            <method name="Snapshot (Field [][], char, int, char): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (42/42)"/>
+              <coverage type="line, %" value="100% (9/9)"/>
+            </method>
+          </class>
+        </srcfile>
+        <srcfile name="Field.java">
+          <coverage type="class, %" value="100% (2/2)"/>
+          <coverage type="method, %" value="73%  (11/15)"/>
+          <coverage type="block, %" value="86%  (105/122)"/>
+          <coverage type="line, %" value="86%  (24,8/29)"/>
+
+          <class name="Field$checker">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="50%  (2/4)"/>
+            <coverage type="block, %" value="81%  (39/48)"/>
+            <coverage type="line, %" value="81%  (0,8/1)"/>
+
+            <method name="valueOf (String): Field$checker">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/5)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="values (): Field$checker []">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="&lt;static initializer&gt;">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (34/34)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="Field$checker (String, int): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (5/5)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+          </class>
+          <class name="Field">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="82%  (9/11)"/>
+            <coverage type="block, %" value="89%  (66/74)"/>
+            <coverage type="line, %" value="86%  (24/28)"/>
+
+            <method name="makeNotKing (): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="setType (Field$checker): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="Field (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (9/9)"/>
+              <coverage type="line, %" value="100% (4/4)"/>
+            </method>
+            <method name="Field (Field$checker): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (9/9)"/>
+              <coverage type="line, %" value="100% (4/4)"/>
+            </method>
+            <method name="Field (Field): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (14/14)"/>
+              <coverage type="line, %" value="100% (5/5)"/>
+            </method>
+            <method name="clear (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (7/7)"/>
+              <coverage type="line, %" value="100% (3/3)"/>
+            </method>
+            <method name="getType (): Field$checker">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="isEmpty (): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (8/8)"/>
+              <coverage type="line, %" value="100% (3/3)"/>
+            </method>
+            <method name="isKing (): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="make (Field): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (9/9)"/>
+              <coverage type="line, %" value="100% (3/3)"/>
+            </method>
+            <method name="makeKing (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (4/4)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
+            </method>
+          </class>
+        </srcfile>
+      </package>
+      <package name="gameMechanic">
+        <coverage type="class, %" value="100% (2/2)"/>
+        <coverage type="method, %" value="61%  (52/85)"/>
+        <coverage type="block, %" value="59%  (1570/2666)"/>
+        <coverage type="line, %" value="51%  (215,8/424)"/>
+
+        <srcfile name="GameMechanicImpl.java">
+          <coverage type="class, %" value="100% (1/1)"/>
+          <coverage type="method, %" value="17%  (3/18)"/>
+          <coverage type="block, %" value="5%   (32/595)"/>
+          <coverage type="line, %" value="7%   (9/128)"/>
+
+          <class name="GameMechanicImpl">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="17%  (3/18)"/>
+            <coverage type="block, %" value="5%   (32/595)"/>
+            <coverage type="line, %" value="7%   (9/128)"/>
+
+            <method name="checkStroke (int, Stroke): Map">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/138)"/>
+              <coverage type="line, %" value="0%   (0/28)"/>
+            </method>
+            <method name="createChat (String, String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/20)"/>
+              <coverage type="line, %" value="0%   (0/4)"/>
+            </method>
+            <method name="createGame (String, String, Map, Map): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/55)"/>
+              <coverage type="line, %" value="0%   (0/11)"/>
+            </method>
+            <method name="createGames (Map): Map">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/78)"/>
+              <coverage type="line, %" value="0%   (0/16)"/>
+            </method>
+            <method name="getSnapshot (int): Snapshot">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/11)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="moveUser (Map): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/31)"/>
+              <coverage type="line, %" value="0%   (0/7)"/>
+            </method>
+            <method name="randomMod2 (): int">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/7)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="removeAlreadyInGameUsers (Map): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/35)"/>
+              <coverage type="line, %" value="0%   (0/8)"/>
+            </method>
+            <method name="removeDeadGames (): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/34)"/>
+              <coverage type="line, %" value="0%   (0/9)"/>
+            </method>
+            <method name="removeRepeatUsers (Map): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/23)"/>
+              <coverage type="line, %" value="0%   (0/5)"/>
+            </method>
+            <method name="removeUser (String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/6)"/>
+              <coverage type="line, %" value="0%   (0/2)"/>
+            </method>
+            <method name="run (): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/9)"/>
+              <coverage type="line, %" value="0%   (0/3)"/>
+            </method>
+            <method name="sendResultStroke (GameSession, int): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/72)"/>
+              <coverage type="line, %" value="0%   (0/14)"/>
+            </method>
+            <method name="sendSnapshot (int): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/24)"/>
+              <coverage type="line, %" value="0%   (0/5)"/>
+            </method>
+            <method name="updateUsersRating (int, int): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/20)"/>
+              <coverage type="line, %" value="0%   (0/4)"/>
+            </method>
+            <method name="GameMechanicImpl (MessageSystem): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (26/26)"/>
+              <coverage type="line, %" value="100% (7/7)"/>
+            </method>
+            <method name="getAddress (): Address">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="getMessageSystem (): MessageSystem">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+          </class>
+        </srcfile>
+        <srcfile name="GameSession.java">
+          <coverage type="class, %" value="100% (1/1)"/>
+          <coverage type="method, %" value="73%  (49/67)"/>
+          <coverage type="block, %" value="74%  (1538/2071)"/>
+          <coverage type="line, %" value="70%  (206,8/296)"/>
+
+          <class name="GameSession">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="73%  (49/67)"/>
+            <coverage type="block, %" value="74%  (1538/2071)"/>
+            <coverage type="line, %" value="70%  (206,8/296)"/>
+
+            <method name="blackLose (): boolean">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/11)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="blackWin (long): boolean">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/19)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="canMove (Field$checker): boolean">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/45)"/>
+              <coverage type="line, %" value="0%   (0/7)"/>
+            </method>
+            <method name="canMove (int, int): boolean">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/36)"/>
+              <coverage type="line, %" value="0%   (0/4)"/>
+            </method>
+            <method name="canMoveLeftDown (int, int): boolean">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/17)"/>
+              <coverage type="line, %" value="0%   (0/3)"/>
+            </method>
+            <method name="canMoveLeftUp (int, int): boolean">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/22)"/>
+              <coverage type="line, %" value="0%   (0/3)"/>
+            </method>
+            <method name="canMoveRightDown (int, int): boolean">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/22)"/>
+              <coverage type="line, %" value="0%   (0/3)"/>
+            </method>
+            <method name="canMoveRightUp (int, int): boolean">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/27)"/>
+              <coverage type="line, %" value="0%   (0/3)"/>
+            </method>
+            <method name="getAnotherId (int): int">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/8)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="getBlackQuantity (): int">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="getFields (): int []">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/105)"/>
+              <coverage type="line, %" value="0%   (0/17)"/>
+            </method>
+            <method name="getWhiteQuantity (): int">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="getWinnerId (): int">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/4)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="getWinnerId (long): int">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/22)"/>
+              <coverage type="line, %" value="0%   (0/5)"/>
+            </method>
+            <method name="saveAILog (String): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/30)"/>
+              <coverage type="line, %" value="0%   (0/4)"/>
+            </method>
+            <method name="saveLog (int): void">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/61)"/>
+              <coverage type="line, %" value="0%   (0/8)"/>
+            </method>
+            <method name="whiteLose (): boolean">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/11)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="whiteWin (long): boolean">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/19)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="getSnapshot (int): Snapshot">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="67%  (8/12)"/>
+              <coverage type="line, %" value="67%  (2/3)"/>
+            </method>
+            <method name="kingCanEatLeftUp (int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="78%  (54/69)"/>
+              <coverage type="line, %" value="71%  (5/7)"/>
+            </method>
+            <method name="normal (int): int">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="80%  (8/10)"/>
+              <coverage type="line, %" value="67%  (2/3)"/>
+            </method>
+            <method name="getAnotherColor (Field$checker): Field$checker">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="83%  (10/12)"/>
+              <coverage type="line, %" value="80%  (4/5)"/>
+            </method>
+            <method name="checking (int, int, int, int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="87%  (33/38)"/>
+              <coverage type="line, %" value="82%  (9/11)"/>
+            </method>
+            <method name="standartCheck (int, int, int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="87%  (40/46)"/>
+              <coverage type="line, %" value="57%  (4/7)"/>
+            </method>
+            <method name="checkStroke (int, int, int, int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="93%  (129/139)"/>
+              <coverage type="line, %" value="82%  (18/22)"/>
+            </method>
+            <method name="makeUsualStroke (int, int, int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="93%  (26/28)"/>
+              <coverage type="line, %" value="86%  (6/7)"/>
+            </method>
+            <method name="canEat (Field$checker): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="94%  (31/33)"/>
+              <coverage type="line, %" value="80%  (4/5)"/>
+            </method>
+            <method name="kingEating (int, int, int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="94%  (65/69)"/>
+              <coverage type="line, %" value="82%  (9/11)"/>
+            </method>
+            <method name="checkEating (int, int, int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="94%  (17/18)"/>
+              <coverage type="line, %" value="97%  (2,9/3)"/>
+            </method>
+            <method name="checkOtherEatingOpportunityForField (int, int, int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="94%  (34/36)"/>
+              <coverage type="line, %" value="88%  (7/8)"/>
+            </method>
+            <method name="pawnEating (int, int, int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="95%  (53/56)"/>
+              <coverage type="line, %" value="79%  (4/5)"/>
+            </method>
+            <method name="pawnCanEatRightDown (int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="95%  (38/40)"/>
+              <coverage type="line, %" value="98%  (2/2)"/>
+            </method>
+            <method name="kingCanEatRightDown (int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="95%  (78/82)"/>
+              <coverage type="line, %" value="78%  (7/9)"/>
+            </method>
+            <method name="kingCanEatLeftDown (int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="97%  (63/65)"/>
+              <coverage type="line, %" value="86%  (6/7)"/>
+            </method>
+            <method name="kingCanEatRightUp (int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="97%  (71/73)"/>
+              <coverage type="line, %" value="86%  (6/7)"/>
+            </method>
+            <method name="&lt;static initializer&gt;">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (22/22)"/>
+              <coverage type="line, %" value="100% (5/5)"/>
+            </method>
+            <method name="GameSession (int, int): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (25/25)"/>
+              <coverage type="line, %" value="100% (7/7)"/>
+            </method>
+            <method name="GameSession (int, int, int, int): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (26/26)"/>
+              <coverage type="line, %" value="100% (7/7)"/>
+            </method>
+            <method name="abs (int): int">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="becameKing (int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (24/24)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
+            </method>
+            <method name="canEat (int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (15/15)"/>
+              <coverage type="line, %" value="100% (3/3)"/>
+            </method>
+            <method name="checkKingOtherEating (int, int, int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (71/71)"/>
+              <coverage type="line, %" value="100% (11/11)"/>
+            </method>
+            <method name="checkOtherEatingOpportunity (int, int, int, int, int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (57/57)"/>
+              <coverage type="line, %" value="100% (7/7)"/>
+            </method>
+            <method name="clearField (int, int): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (8/8)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
+            </method>
+            <method name="descInit (int, int): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (75/75)"/>
+              <coverage type="line, %" value="100% (11/11)"/>
+            </method>
+            <method name="eat (int, int, int, int): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (71/71)"/>
+              <coverage type="line, %" value="100% (11/11)"/>
+            </method>
+            <method name="eating (int, int, int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (35/35)"/>
+              <coverage type="line, %" value="100% (5/5)"/>
+            </method>
+            <method name="fieldIsEmpty (int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (8/8)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="fieldIsKing (int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (8/8)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="generateEmptyLine (int): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (15/15)"/>
+              <coverage type="line, %" value="100% (3/3)"/>
+            </method>
+            <method name="generateField (int, int, Field$checker): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (11/11)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
+            </method>
+            <method name="generateLine (int, Field$checker, boolean): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (26/26)"/>
+              <coverage type="line, %" value="100% (5/5)"/>
+            </method>
+            <method name="getField (int, int): Field">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (7/7)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="getFieldType (int, int): Field$checker">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (8/8)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="getNext (): char">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (9/9)"/>
+              <coverage type="line, %" value="100% (3/3)"/>
+            </method>
+            <method name="getPlayerColor (int): Field$checker">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (8/8)"/>
+              <coverage type="line, %" value="100% (3/3)"/>
+            </method>
+            <method name="inBorder (int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (13/13)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="isOdd (int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (9/9)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="kingCanEat (int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (24/24)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="makeEatingStroke (int, int, int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (20/20)"/>
+              <coverage type="line, %" value="100% (4/4)"/>
+            </method>
+            <method name="makeKing (int, int): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (8/8)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
+            </method>
+            <method name="move (int, int, int, int): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (18/18)"/>
+              <coverage type="line, %" value="100% (3/3)"/>
+            </method>
+            <method name="pawnCanEat (int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (24/24)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="pawnCanEatLeftDown (int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (36/36)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
+            </method>
+            <method name="pawnCanEatLeftUp (int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (40/40)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
+            </method>
+            <method name="pawnCanEatRightUp (int, int): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (44/44)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
+            </method>
+            <method name="returnSnapshot (char): Snapshot">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (12/12)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+          </class>
+        </srcfile>
+      </package>
       <package name="messageSystem">
         <coverage type="class, %" value="22%  (2/9)"/>
-        <coverage type="method, %" value="22%  (5/23)"/>
-        <coverage type="block, %" value="37%  (112/300)"/>
-        <coverage type="line, %" value="27%  (19/71)"/>
+        <coverage type="method, %" value="35%  (8/23)"/>
+        <coverage type="block, %" value="62%  (187/300)"/>
+        <coverage type="line, %" value="44%  (31/71)"/>
 
         <srcfile name="MsgToAccountService.java">
           <coverage type="class, %" value="0%   (0/1)"/>
@@ -2328,66 +2359,22 @@
             </method>
           </class>
         </srcfile>
-        <srcfile name="MessageSystemImpl.java">
-          <coverage type="class, %" value="100% (1/1)"/>
-          <coverage type="method, %" value="33%  (2/6)"/>
-          <coverage type="block, %" value="44%  (28/64)"/>
-          <coverage type="line, %" value="38%  (6/16)"/>
-
-          <class name="MessageSystemImpl">
-            <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="33%  (2/6)"/>
-            <coverage type="block, %" value="44%  (28/64)"/>
-            <coverage type="line, %" value="38%  (6/16)"/>
-
-            <method name="execForAbonent (Abonent): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/19)"/>
-              <coverage type="line, %" value="0%   (0/6)"/>
-            </method>
-            <method name="getAddressByName (String): Address">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/5)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getMessages (): Map">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="putMsg (Address, Msg): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/9)"/>
-              <coverage type="line, %" value="0%   (0/2)"/>
-            </method>
-            <method name="MessageSystemImpl (): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (13/13)"/>
-              <coverage type="line, %" value="100% (3/3)"/>
-            </method>
-            <method name="addService (Abonent, String): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (15/15)"/>
-              <coverage type="line, %" value="100% (3/3)"/>
-            </method>
-          </class>
-        </srcfile>
         <srcfile name="AddressServiceImpl.java">
           <coverage type="class, %" value="100% (1/1)"/>
           <coverage type="method, %" value="100% (3/3)"/>
-          <coverage type="block, %" value="58%  (84/145)"/>
-          <coverage type="line, %" value="65%  (13/20)"/>
+          <coverage type="block, %" value="87%  (126/145)"/>
+          <coverage type="line, %" value="80%  (16/20)"/>
 
           <class name="AddressServiceImpl">
             <coverage type="class, %" value="100% (1/1)"/>
             <coverage type="method, %" value="100% (3/3)"/>
-            <coverage type="block, %" value="58%  (84/145)"/>
-            <coverage type="line, %" value="65%  (13/20)"/>
+            <coverage type="block, %" value="87%  (126/145)"/>
+            <coverage type="line, %" value="80%  (16/20)"/>
 
             <method name="getAddressByName (String): Address">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="8%   (5/66)"/>
-              <coverage type="line, %" value="12%  (1/8)"/>
+              <coverage type="block, %" value="71%  (47/66)"/>
+              <coverage type="line, %" value="50%  (4/8)"/>
             </method>
             <method name="AddressServiceImpl (): void">
               <coverage type="method, %" value="100% (1/1)"/>
@@ -2401,122 +2388,57 @@
             </method>
           </class>
         </srcfile>
-      </package>
-      <package name="base">
-        <coverage type="class, %" value="50%  (1/2)"/>
-        <coverage type="method, %" value="43%  (3/7)"/>
-        <coverage type="block, %" value="45%  (15/33)"/>
-        <coverage type="line, %" value="42%  (5/12)"/>
-
-        <srcfile name="Msg.java">
-          <coverage type="class, %" value="0%   (0/1)"/>
-          <coverage type="method, %" value="0%   (0/3)"/>
-          <coverage type="block, %" value="0%   (0/15)"/>
-          <coverage type="line, %" value="0%   (0/6)"/>
-
-          <class name="Msg">
-            <coverage type="class, %" value="0%   (0/1)"/>
-            <coverage type="method, %" value="0%   (0/3)"/>
-            <coverage type="block, %" value="0%   (0/15)"/>
-            <coverage type="line, %" value="0%   (0/6)"/>
-
-            <method name="Msg (Address, Address): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/9)"/>
-              <coverage type="line, %" value="0%   (0/4)"/>
-            </method>
-            <method name="getFrom (): Address">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="getTo (): Address">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-          </class>
-        </srcfile>
-        <srcfile name="Address.java">
+        <srcfile name="MessageSystemImpl.java">
           <coverage type="class, %" value="100% (1/1)"/>
-          <coverage type="method, %" value="75%  (3/4)"/>
-          <coverage type="block, %" value="83%  (15/18)"/>
-          <coverage type="line, %" value="83%  (5/6)"/>
+          <coverage type="method, %" value="83%  (5/6)"/>
+          <coverage type="block, %" value="95%  (61/64)"/>
+          <coverage type="line, %" value="94%  (15/16)"/>
 
-          <class name="Address">
+          <class name="MessageSystemImpl">
             <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="75%  (3/4)"/>
-            <coverage type="block, %" value="83%  (15/18)"/>
-            <coverage type="line, %" value="83%  (5/6)"/>
+            <coverage type="method, %" value="83%  (5/6)"/>
+            <coverage type="block, %" value="95%  (61/64)"/>
+            <coverage type="line, %" value="94%  (15/16)"/>
 
-            <method name="getAbonentId (): int">
+            <method name="getMessages (): Map">
               <coverage type="method, %" value="0%   (0/1)"/>
               <coverage type="block, %" value="0%   (0/3)"/>
               <coverage type="line, %" value="0%   (0/1)"/>
             </method>
-            <method name="&lt;static initializer&gt;">
+            <method name="MessageSystemImpl (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (13/13)"/>
+              <coverage type="line, %" value="100% (3/3)"/>
+            </method>
+            <method name="addService (Abonent, String): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (15/15)"/>
+              <coverage type="line, %" value="100% (3/3)"/>
+            </method>
+            <method name="execForAbonent (Abonent): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (19/19)"/>
+              <coverage type="line, %" value="100% (6/6)"/>
+            </method>
+            <method name="getAddressByName (String): Address">
               <coverage type="method, %" value="100% (1/1)"/>
               <coverage type="block, %" value="100% (5/5)"/>
               <coverage type="line, %" value="100% (1/1)"/>
             </method>
-            <method name="Address (): void">
+            <method name="putMsg (Address, Msg): void">
               <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (7/7)"/>
-              <coverage type="line, %" value="100% (3/3)"/>
-            </method>
-            <method name="hashCode (): int">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (3/3)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (9/9)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
             </method>
           </class>
         </srcfile>
       </package>
       <package name="resource">
         <coverage type="class, %" value="100% (4/4)"/>
-        <coverage type="method, %" value="86%  (12/14)"/>
-        <coverage type="block, %" value="76%  (116/153)"/>
-        <coverage type="line, %" value="76%  (34/45)"/>
+        <coverage type="method, %" value="93%  (13/14)"/>
+        <coverage type="block, %" value="82%  (125/153)"/>
+        <coverage type="line, %" value="84%  (38/45)"/>
 
-        <srcfile name="GameSettings.java">
-          <coverage type="class, %" value="100% (1/1)"/>
-          <coverage type="method, %" value="60%  (3/5)"/>
-          <coverage type="block, %" value="43%  (9/21)"/>
-          <coverage type="line, %" value="44%  (4/9)"/>
-
-          <class name="GameSettings">
-            <coverage type="class, %" value="100% (1/1)"/>
-            <coverage type="method, %" value="60%  (3/5)"/>
-            <coverage type="block, %" value="43%  (9/21)"/>
-            <coverage type="line, %" value="44%  (4/9)"/>
-
-            <method name="GameSettings (int, int): void">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/9)"/>
-              <coverage type="line, %" value="0%   (0/4)"/>
-            </method>
-            <method name="getStrokeTime (): int">
-              <coverage type="method, %" value="0%   (0/1)"/>
-              <coverage type="block, %" value="0%   (0/3)"/>
-              <coverage type="line, %" value="0%   (0/1)"/>
-            </method>
-            <method name="GameSettings (): void">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (3/3)"/>
-              <coverage type="line, %" value="100% (2/2)"/>
-            </method>
-            <method name="getFieldSize (): int">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (3/3)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
-            </method>
-            <method name="getPlayerSize (): int">
-              <coverage type="method, %" value="100% (1/1)"/>
-              <coverage type="block, %" value="100% (3/3)"/>
-              <coverage type="line, %" value="100% (1/1)"/>
-            </method>
-          </class>
-        </srcfile>
         <srcfile name="Rating.java">
           <coverage type="class, %" value="100% (1/1)"/>
           <coverage type="method, %" value="100% (3/3)"/>
@@ -2542,6 +2464,45 @@
             <method name="getAvgDiff (): int">
               <coverage type="method, %" value="100% (1/1)"/>
               <coverage type="block, %" value="100% (2/2)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+          </class>
+        </srcfile>
+        <srcfile name="GameSettings.java">
+          <coverage type="class, %" value="100% (1/1)"/>
+          <coverage type="method, %" value="80%  (4/5)"/>
+          <coverage type="block, %" value="86%  (18/21)"/>
+          <coverage type="line, %" value="89%  (8/9)"/>
+
+          <class name="GameSettings">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="80%  (4/5)"/>
+            <coverage type="block, %" value="86%  (18/21)"/>
+            <coverage type="line, %" value="89%  (8/9)"/>
+
+            <method name="getStrokeTime (): int">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/1)"/>
+            </method>
+            <method name="GameSettings (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
+            </method>
+            <method name="GameSettings (int, int): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (9/9)"/>
+              <coverage type="line, %" value="100% (4/4)"/>
+            </method>
+            <method name="getFieldSize (): int">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="getPlayerSize (): int">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
               <coverage type="line, %" value="100% (1/1)"/>
             </method>
           </class>
@@ -2647,6 +2608,76 @@
               <coverage type="method, %" value="100% (1/1)"/>
               <coverage type="block, %" value="100% (26/26)"/>
               <coverage type="line, %" value="100% (5/5)"/>
+            </method>
+          </class>
+        </srcfile>
+      </package>
+      <package name="base">
+        <coverage type="class, %" value="100% (2/2)"/>
+        <coverage type="method, %" value="100% (7/7)"/>
+        <coverage type="block, %" value="100% (33/33)"/>
+        <coverage type="line, %" value="100% (12/12)"/>
+
+        <srcfile name="Address.java">
+          <coverage type="class, %" value="100% (1/1)"/>
+          <coverage type="method, %" value="100% (4/4)"/>
+          <coverage type="block, %" value="100% (18/18)"/>
+          <coverage type="line, %" value="100% (6/6)"/>
+
+          <class name="Address">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (4/4)"/>
+            <coverage type="block, %" value="100% (18/18)"/>
+            <coverage type="line, %" value="100% (6/6)"/>
+
+            <method name="&lt;static initializer&gt;">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (5/5)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="Address (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (7/7)"/>
+              <coverage type="line, %" value="100% (3/3)"/>
+            </method>
+            <method name="getAbonentId (): int">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="hashCode (): int">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+          </class>
+        </srcfile>
+        <srcfile name="Msg.java">
+          <coverage type="class, %" value="100% (1/1)"/>
+          <coverage type="method, %" value="100% (3/3)"/>
+          <coverage type="block, %" value="100% (15/15)"/>
+          <coverage type="line, %" value="100% (6/6)"/>
+
+          <class name="Msg">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (3/3)"/>
+            <coverage type="block, %" value="100% (15/15)"/>
+            <coverage type="line, %" value="100% (6/6)"/>
+
+            <method name="Msg (Address, Address): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (9/9)"/>
+              <coverage type="line, %" value="100% (4/4)"/>
+            </method>
+            <method name="getFrom (): Address">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="getTo (): Address">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
             </method>
           </class>
         </srcfile>

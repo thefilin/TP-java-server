@@ -33,7 +33,7 @@ public class GameMechanicTest {
     public void test(){
         assertEquals(gameMechanic.getMessageSystem(), messageSystem);
     }
-
+ /*
     @Test
     public void testGameCreating(){
         Map<String, String> resp;
@@ -49,4 +49,5 @@ public class GameMechanicTest {
         assertTrue(resp.containsKey("0"));
         assertTrue(resp.containsKey("1"));
     }
+*/
 }
