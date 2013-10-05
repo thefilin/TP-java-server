@@ -2,13 +2,15 @@ import base.Frontend;
 import base.MessageSystem;
 import frontend.FrontendImpl;
 import messageSystem.MessageSystemImpl;
-
-import javax.servlet.http.*;
-
 import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.handler.AbstractHandler;
+import org.eclipse.jetty.server.Response;
 import org.junit.Before;
 import org.junit.Test;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequestWrapper;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpServletResponseWrapper;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
@@ -29,12 +31,13 @@ public class FrontendTest {
         messageSystem = new MessageSystemImpl();
         frontend = new FrontendImpl(messageSystem);
     }
-   /*
+
     @Test
     public void test(){
         Request request = new Request(null, null);
-        HttpServletRequest httpServletRequest = new HttpServletRequestWrapper(null);
-        HttpServletResponse httpServletResponse = new HttpServletResponseWrapper(null);
+        Response response = new Response(null, null);
+        HttpServletRequest httpServletRequest = new HttpServletRequestWrapper(request);
+        HttpServletResponse httpServletResponse = new HttpServletResponseWrapper(response);
         try{
             frontend.handle("/", request, httpServletRequest, httpServletResponse);
             assertTrue(true);
@@ -42,5 +45,4 @@ public class FrontendTest {
             fail(e.getMessage());
         }
     }
-    */
 }

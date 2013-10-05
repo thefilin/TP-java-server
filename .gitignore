@@ -1,0 +1,14 @@
+.idea/
+target/
+bin/
+lib/
+log/
+out/
+target/
+statistic/
+static/
+db/
+TODO
+dbLite.sql
+.classpath
+.project
