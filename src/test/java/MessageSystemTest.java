@@ -10,39 +10,6 @@ import base.Address;
 import base.MessageSystem;
 import base.Msg;
 
-class FakeAbonent implements Abonent {
-	private Address address;
-	public boolean messageAccepted;
-	
-	public FakeAbonent() {
-		this.address = new Address();
-	}
-	
-	public FakeAbonent(Address address) {
-		this.address = address;
-	}
-
-	public Address getAddress() {
-		return address;
-	}
-}
-
-class MsgToFakeAbonent extends Msg {
-
-	public MsgToFakeAbonent(Address from, Address to) {
-		super(from, to);
-        assertEquals(from, getFrom());
-        assertEquals(to, getTo());
-	}
-
-	@Override
-	public void exec(Abonent abonent) {
-		if (abonent instanceof FakeAbonent) {
-			((FakeAbonent) abonent).messageAccepted = true;
-		}
-	}
-}
-
 public class MessageSystemTest {
 	private MessageSystem messageSystem;
 
@@ -77,4 +44,37 @@ public class MessageSystemTest {
 		Address actualAddress = messageSystem.getAddressByName("fake");
 		assertSame("Same addresses", correctAddress, actualAddress);
 	}
+
+    private class FakeAbonent implements Abonent {
+        private Address address;
+        public boolean messageAccepted;
+
+        public FakeAbonent() {
+            this.address = new Address();
+        }
+
+        public FakeAbonent(Address address) {
+            this.address = address;
+        }
+
+        public Address getAddress() {
+            return address;
+        }
+    }
+
+    private class MsgToFakeAbonent extends Msg {
+
+        public MsgToFakeAbonent(Address from, Address to) {
+            super(from, to);
+            assertEquals(from, getFrom());
+            assertEquals(to, getTo());
+        }
+
+        @Override
+        public void exec(Abonent abonent) {
+            if (abonent instanceof FakeAbonent) {
+                ((FakeAbonent) abonent).messageAccepted = true;
+            }
+        }
+    }
 }

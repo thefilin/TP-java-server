@@ -40,9 +40,13 @@ public class WebSocketImpl  extends WebSocketAdapter implements WebSocket{
 		return address;
 	}
 
-	@Override
-	public void onWebSocketText(String message) {
-		if (isNotConnected()) {
+    @Override
+    public void onWebSocketText(String message){
+        onWebSocketText(message, false);
+    }
+
+	public void onWebSocketText(String message, boolean force) {
+		if (isNotConnected() && !force) {
 			return; 
 		}
 		String sessionId=null,startServerTime=null;

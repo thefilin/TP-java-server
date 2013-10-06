@@ -3,9 +3,11 @@ package msg;
 import base.Address;
 import base.DataAccessObject;
 import base.MessageSystem;
+import dbService.MsgUpdateUsers;
 import dbService.UserDataSet;
 import frontend.newOrLoginUser.MsgAddUser;
 import frontend.newOrLoginUser.MsgGetUser;
+import frontend.newOrLoginUser.MsgUpdateUser;
 import junit.framework.Assert;
 import messageSystem.MessageSystemImpl;
 import org.junit.Before;
@@ -43,13 +45,26 @@ public class DBServiceTest {
         Assert.assertTrue(dao.getMessageSystem().getMessages().size()==1);
     }
 
+    @Test
+    public void testMsgUpdateUser(){
+        MsgUpdateUsers msg = new MsgUpdateUsers(null, null, null);
+        msg.exec(dao);
+        Assert.assertTrue(dao.isUsedUpdateUsers());
+    }
+
     private class DataAccessObjectMock implements DataAccessObject {
         private final MessageSystem messageSystem;
         private String login, password;
+        private boolean usedUpdateUsers;
 
         public DataAccessObjectMock(MessageSystem messageSystem){
             this.messageSystem = messageSystem;
             messageSystem.addService(this, "DataAccessObject");
+            usedUpdateUsers = false;
+        }
+
+        public boolean isUsedUpdateUsers(){
+            return usedUpdateUsers;
         }
 
         @Override
@@ -71,6 +86,7 @@ public class DBServiceTest {
         @Override
         public void updateUsers(List<UserDataSet> users) {
             //To change body of implemented methods use File | Settings | File Templates.
+            usedUpdateUsers = true;
         }
 
         @Override

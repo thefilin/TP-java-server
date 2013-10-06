@@ -9,6 +9,7 @@ import frontend.MsgRemoveUserFromGM;
 import gameClasses.Snapshot;
 import gameClasses.Stroke;
 import gameMechanic.Stroke.MsgCheckStroke;
+import gameMechanic.gameCreating.MsgCreateGames;
 import junit.framework.Assert;
 import messageSystem.MessageSystemImpl;
 import org.junit.Before;
@@ -64,15 +65,36 @@ public class GameMechanicTest {
         assertTrue(gameMechanic.isUsedRemoveUser());
     }
 
+    @Test
+    public void testMsgCreateGames(){
+        final Address wsAddress = new Address();
+        Abonent ws = new Abonent() {
+            @Override
+            public Address getAddress() {
+                return wsAddress;  //To change body of implemented methods use File | Settings | File Templates.
+            }
+        };
+        messageSystem.addService(ws, "WebSocket");
+
+        MsgCreateGames msg = new MsgCreateGames(gameMechanic.getAddress(), wsAddress, null);
+        msg.exec(gameMechanic);
+
+        Assert.assertTrue(gameMechanic.isUsedCreateGames());
+        Assert.assertTrue(messageSystem.getMessages().get(wsAddress).size()==1);
+    }
+
+
 
 
     private class GameMechanicMock implements GameMechanic {
         private MessageSystem messageSystem;
-        private boolean usedRemoveUser, usedCheckStroke;
+        private Address address;
+        private boolean usedRemoveUser, usedCheckStroke, usedCreateGames;
 
         public GameMechanicMock(MessageSystem messageSystem){
+            this.address = new Address();
             this.messageSystem = messageSystem;
-            usedCheckStroke = usedRemoveUser = false;
+            usedCreateGames = usedCheckStroke = usedRemoveUser = false;
         }
 
         public boolean isUsedRemoveUser(){
@@ -83,8 +105,13 @@ public class GameMechanicTest {
             return usedCheckStroke;
         }
 
+        public boolean isUsedCreateGames(){
+            return usedCreateGames;
+        }
+
         @Override
         public Map<String, String> createGames(Map<String, UserDataSet> users) {
+            usedCreateGames = true;
             return null;  //To change body of implemented methods use File | Settings | File Templates.
         }
 
@@ -112,7 +139,7 @@ public class GameMechanicTest {
 
         @Override
         public Address getAddress() {
-            return null;  //To change body of implemented methods use File | Settings | File Templates.
+            return address;  //To change body of implemented methods use File | Settings | File Templates.
         }
 
         @Override
