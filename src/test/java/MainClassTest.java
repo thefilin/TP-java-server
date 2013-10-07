@@ -15,8 +15,5 @@ public class MainClassTest {
     public void test() throws Exception {
         Main main = new Main();
         Main.main(null);
-        //using antipatern, because if main is bad, then test will be failed
-        //in other case always good
-        Assert.assertTrue(true);
     }
 }

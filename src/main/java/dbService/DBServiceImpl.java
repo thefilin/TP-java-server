@@ -101,7 +101,7 @@ public class DBServiceImpl implements DataAccessObject{
 			System.err.println("\nError");
 			System.err.println("DVServiceImpl, run2");
 			System.err.println(e.getMessage());
-			System.exit(-1);
+//			System.exit(-1);
 		}
 		while(true){
 			messageSystem.execForAbonent(this);
