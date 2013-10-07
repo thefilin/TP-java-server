@@ -84,6 +84,7 @@ public class GameSessionTest {
 				"['false', 'false', 'false', 'false', 'false', 'false', 'false', 'false'], " +
 				"['false', 'false', 'false', 'false', 'false', 'false', 'false', 'false']]}";
 
+		gameSession.saveLog(1);
 		System.setErr(printStreamOriginal);
 		assertEquals(gameSession.getSnapshot(1).toStringTest(),howItMustBe);
 		System.out.println("test1 passed");
@@ -204,6 +205,7 @@ public class GameSessionTest {
 
 		System.setErr(printStreamOriginal);
 		assertEquals(gameSession.getSnapshot(1).toStringTest(),howItMustBe);
+		assertEquals(gameSession.getWinnerId(), 0);
 		System.out.println("test3 passed");
 		
 		

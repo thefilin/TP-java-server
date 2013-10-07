@@ -1,5 +1,7 @@
 import base.GameMechanic;
 import base.MessageSystem;
+import base.Abonent;
+import base.Address;
 import dbService.UserDataSet;
 import gameMechanic.GameMechanicImpl;
 import messageSystem.MessageSystemImpl;
@@ -33,10 +35,18 @@ public class GameMechanicTest {
     public void test(){
         assertEquals(gameMechanic.getMessageSystem(), messageSystem);
     }
- /*
+
     @Test
     public void testGameCreating(){
-        Map<String, String> resp;
+        final Address chatAddress = new Address();
+	Abonent chat = new Abonent(){
+		@Override
+		public Address getAddress(){
+			return chatAddress;
+		}
+	};
+	messageSystem.addService(chat, "GameChat");
+	Map<String, String> resp;
         UserDataSet user0 = new UserDataSet(0,"First",0,0,0);
         UserDataSet user1 = new UserDataSet(1,"Second",0,0,0);
         Map<String, UserDataSet> users= new HashMap<String, UserDataSet>();
@@ -49,5 +59,5 @@ public class GameMechanicTest {
         assertTrue(resp.containsKey("0"));
         assertTrue(resp.containsKey("1"));
     }
-*/
+
 }
