@@ -2,6 +2,7 @@ import static org.junit.Assert.*;
 
 import java.io.OutputStream;
 import java.io.PrintStream;
+import java.util.Arrays;
 
 import org.junit.Test;
 
@@ -325,5 +326,12 @@ public class GameSessionTest {
         String snapshot = "{\"status\":\"snapshot\",\"next\":\"w\",\"color\":\"w\",\"field\":[[\"white\", \"nothing\", \"white\", \"nothing\", \"white\", \"nothing\", \"white\", \"nothing\"], [\"nothing\", \"white\", \"nothing\", \"white\", \"nothing\", \"white\", \"nothing\", \"white\"], [\"white\", \"nothing\", \"white\", \"nothing\", \"white\", \"nothing\", \"white\", \"nothing\"], [\"nothing\", \"nothing\", \"nothing\", \"nothing\", \"nothing\", \"nothing\", \"nothing\", \"nothing\"], [\"nothing\", \"nothing\", \"nothing\", \"nothing\", \"nothing\", \"nothing\", \"nothing\", \"nothing\"], [\"nothing\", \"black\", \"nothing\", \"black\", \"nothing\", \"black\", \"nothing\", \"black\"], [\"black\", \"nothing\", \"black\", \"nothing\", \"black\", \"nothing\", \"black\", \"nothing\"], [\"nothing\", \"black\", \"nothing\", \"black\", \"nothing\", \"black\", \"nothing\", \"black\"]],\"king\":[[\"false\", \"false\", \"false\", \"false\", \"false\", \"false\", \"false\", \"false\"], [\"false\", \"false\", \"false\", \"false\", \"false\", \"false\", \"false\", \"false\"], [\"false\", \"false\", \"false\", \"false\", \"false\", \"false\", \"false\", \"false\"], [\"false\", \"false\", \"false\", \"false\", \"false\", \"false\", \"false\", \"false\"], [\"false\", \"false\", \"false\", \"false\", \"false\", \"false\", \"false\", \"false\"], [\"false\", \"false\", \"false\", \"false\", \"false\", \"false\", \"false\", \"false\"], [\"false\", \"false\", \"false\", \"false\", \"false\", \"false\", \"false\", \"false\"], [\"false\", \"false\", \"false\", \"false\", \"false\", \"false\", \"false\", \"false\"]]}";
         GameSession gameSession = new GameSession(1,2);
         assertEquals(gameSession.getSnapshot(1).toString(), snapshot);
+    }
+    
+    @Test
+    public void getFieldsTest() {
+    		GameSession gameSession = new GameSession(1,2);
+    		int[] fields = gameSession.getFields();
+    		assertTrue(Arrays.equals(fields, new int[]{0, 2, 4, 6, 9, 11, 13, 15, 16, 18, 20, 22, 41, 43, 45, 47, 48, 50, 52, 54, 57, 59, 61, 63} ));
     }
 }
