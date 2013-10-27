@@ -59,7 +59,12 @@
         </repository>
     </repositories>
 
-    <dependencies>
+    <dependencies> 
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>4.2.6.Final</version>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

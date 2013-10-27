@@ -8,10 +8,12 @@ import org.eclipse.jetty.server.handler.HandlerList;
 import org.eclipse.jetty.server.handler.ResourceHandler;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
+import org.hibernate.cfg.Configuration;
 
 import chat.ChatWSServletImpl;
 import chat.GameChatImpl;
 
+import dbService.DBServiceHibernateImpl;
 import dbService.DBServiceImpl;
 
 import resource.ResourceFactory;
@@ -42,7 +44,7 @@ public class Main{
 //		AccountService accountService = new AccountServiceImpl(messageSystem);
 		GameMechanic gameMechanic = new GameMechanicImpl(messageSystem);
 		UserData userData = new UserDataImpl(messageSystem);
-		DataAccessObject dbService = new DBServiceImpl(messageSystem);
+		DataAccessObject dbService = new DBServiceHibernateImpl(messageSystem, new Configuration());
 		SysInfo sysInfo = new SysInfo();
 		
 		Server server = new Server(8000);

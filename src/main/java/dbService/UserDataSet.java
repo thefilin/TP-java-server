@@ -1,13 +1,42 @@
 package dbService;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 import utils.TimeHelper;
 
+@Entity
+@Table(name = "Users")
 public class UserDataSet{
+	
+	@Id
+    @Column(name="id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	private int rating, winQuantity, loseQuantity;
+	
+	@Column(name="rating")
+	private int rating;
+	
+	@Column(name="winQuantity")
+	private int winQuantity;
+	
+	@Column(name="loseQuantity")
+	private int loseQuantity;
+	
+	@Column(name="nick")
 	private String nick;
+	
+	@Column(name="lastVisit")
 	private long lastVisit;
+	
+	@Column(name="postStatus")
 	private int postStatus;
+	
+	@Column(name="color")
 	private String color;
 
 	public UserDataSet(int id, String nick, int rating, int winQuantity, int loseQuantity){

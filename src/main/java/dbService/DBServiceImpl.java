@@ -92,7 +92,7 @@ public class DBServiceImpl implements DataAccessObject{
 			System.err.println(e.getMessage());
 			System.exit(-1);
 		}
-		//		String url = "jdbc:sqlite:db/game.db";
+
 		String url="jdbc:mysql://localhost:3306/checkers?user=checkers&password=QSQ9D9BUBW93DK8A7H9FPXOB5OLOP84BA4CJRWK96VN0GPVC6P";
 		try{
 			connection = DriverManager.getConnection(url);
