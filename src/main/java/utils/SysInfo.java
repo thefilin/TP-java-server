@@ -38,23 +38,6 @@ public class SysInfo implements Runnable{
 				VFS.writeToFile(data.get(service), String.valueOf(UserDataImpl.ccu()));
 			}
 		}
-		while (true){
-			TimeHelper.sleep(10000);
-			for(String service:data.keySet()){
-				lastDate=TimeHelper.getTime();
-				if(service.equals("MemoryUsage")){
-					VFS.writeToEndOfFile(data.get(service), ","+String.valueOf((int) (runtime.totalMemory()-runtime.freeMemory())));
-				}
-				else if(service.equals("TotalMemory")){
-					VFS.writeToEndOfFile(data.get(service), ","+String.valueOf((int) (runtime.totalMemory())));
-				}
-				else if(service.equals("Time")){
-					VFS.writeToEndOfFile(data.get(service), ","+lastDate);
-				}
-				else if(service.equals("CCU")){
-					VFS.writeToEndOfFile(data.get(service), ","+String.valueOf(UserDataImpl.ccu()));
-				}
-			}
-		}
+
 	}
 }

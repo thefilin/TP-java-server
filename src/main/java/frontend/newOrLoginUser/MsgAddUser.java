@@ -7,9 +7,9 @@ import messageSystem.MsgToDBService;
 
 
 public class MsgAddUser extends MsgToDBService{
-	final private String login;
-	final private String sessionId;
-	final private String password;
+	final public String login;
+	final public String sessionId;
+	final public String password;
 
 	public MsgAddUser(Address from, Address to, String sessionId,String nick, String password){
 		super(from,to);
