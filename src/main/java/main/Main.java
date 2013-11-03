@@ -14,7 +14,6 @@ import chat.ChatWSServletImpl;
 import chat.GameChatImpl;
 
 import dbService.DBServiceHibernateImpl;
-import dbService.DBServiceImpl;
 
 import resource.ResourceFactory;
 
