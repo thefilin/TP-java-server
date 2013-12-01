@@ -38,11 +38,7 @@ public class VFS{
 			fr.close();
 			return String.valueOf(buffer);
 		}
-		catch (Exception e) {
-			System.err.println("\nError");
-			System.err.println("VFS, getBytes");
-			System.err.println(e.getMessage());
-		}
+		catch (Exception e) {}
 		return null;	
 	}
 
@@ -87,21 +83,13 @@ public class VFS{
 			file.delete();
 			fw = new FileWriter(file);
 			fw.write(data);
-		} catch (Exception e) {
-			System.err.println("\nError");
-			System.err.println("VFS, writeToFile1");
-			System.err.println(e.getMessage());
-		}
+		} catch (Exception e) {}
 		finally{
 			if(fw!=null){
 				try{
 					fw.close();
 				}
-				catch(Exception e){
-					System.err.println("\nError");
-					System.err.println("VFS, writeToFile2");
-					System.err.println(e.getMessage());
-				}
+				catch(Exception e){}
 			}
 		}
 	}
@@ -115,21 +103,13 @@ public class VFS{
 			err=new FileWriter(file,true);
 			err.write(data);
 		}
-		catch(Exception e){
-			System.err.println("\nError");
-			System.err.println("VFS, writeToEndOfFile1");
-			System.err.println(e.getMessage());
-		}
+		catch(Exception e){}
 		finally{
 			if(err!=null){
 				try{
 					err.close();
 				}
-				catch(Exception e){
-					System.err.println("\nError");
-					System.err.println("VFS, writeToEndOfFile2");
-					System.err.println(e.getMessage());
-				}
+				catch(Exception e){}
 			}
 		}
 	}
@@ -147,31 +127,19 @@ public class VFS{
 				string.append(line);
 			}
 		}
-		catch(Exception e){
-			System.err.println("\nError");
-			System.err.println("VFS, readFile1");
-			System.err.println(e.getMessage());
-		}
+		catch(Exception e){}
 		finally{
 			if(br!=null){
 				try{
 					br.close();
 				}
-				catch(Exception e){
-					System.err.println("\nError");
-					System.err.println("VFS, readFile2");
-					System.err.println(e.getMessage());
-				}
+				catch(Exception e){}
 			}
 			if(fr!=null){
 				try{
 					fr.close();
 				}
-				catch(Exception e){
-					System.err.println("\nError");
-					System.err.println("VFS, readFile3");
-					System.err.println(e.getMessage());
-				}
+				catch(Exception e){}
 			}
 		}
 		return string.toString();

@@ -50,11 +50,7 @@ public class ResourceFactory {
 				resource.put(path, (Resource) saxh.object);
 				return (Resource) saxh.object;
 			}
-			catch(Exception e){
-				System.err.println("\nError:");
-				System.err.println("ResourceFactory, getResource");
-				System.err.println(e.getMessage());
-			}
+			catch(Exception e){}
 			return null;
 		}
 	}

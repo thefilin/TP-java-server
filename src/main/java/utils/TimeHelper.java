@@ -13,8 +13,7 @@ public class TimeHelper{
 		try {
 			Thread.sleep(TICK_TIME);
 		} 
-		catch (InterruptedException e){
-		}
+		catch (InterruptedException e){}
 	}
 	
 	public static long getCurrentTime(){
