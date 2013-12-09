@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.eclipse.jetty.server.Request;
 
-public interface Frontend extends Abonent{
+public interface Frontend{
 	public void handle(String target,Request baseRequest,
 			HttpServletRequest request, HttpServletResponse response) 
 					throws IOException, ServletException;

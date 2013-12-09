@@ -13,8 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.handler.AbstractHandler;
 
-import frontend.newOrLoginUser.*;
-
 import utils.CookieDescriptor;
 import utils.SHA2;
 import utils.SysInfo;
@@ -28,20 +26,15 @@ import dbService.UserDataSet;
 
 
 public class FrontendImpl extends AbstractHandler implements Frontend{
-	private AtomicInteger creatorSessionId=new AtomicInteger();
-	final private Address address;
-	final private MessageSystem messageSystem;
+	
+	final private FrontendModel frontendModel;
+
 	enum status {nothing,haveCookie,haveCookieAndPost,waiting,ready}
 
 	public FrontendImpl(MessageSystem msgSystem){
-		address=new Address();
-		messageSystem=msgSystem;
-		messageSystem.addService(this,"Frontend");
+		frontendModel = new FrontendModel(msgSystem);
 	}
 
-	public Address getAddress(){
-		return address;
-	}
 
 	private void getStatistic(HttpServletResponse response, UserDataSet userSession){
 		Map<String,String> data= new HashMap<String,String>();
@@ -104,118 +97,6 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 				||(!UserDataImpl.containsSessionId(strSessionId)));
 	}
 
-	private void sendPage(String name, UserDataSet userSession, HttpServletResponse response){
-		try {
-			Map<String, String> data = new HashMap<String, String>();
-			data.put("page", name);
-			if(userSession!=null){
-				data.put("id", String.valueOf(userSession.getId()));
-				data.put("nick", String.valueOf(userSession.getNick()));
-				data.put("rating", String.valueOf(userSession.getRating()));
-			}
-			else{
-				data.put("id", "0");
-				data.put("nick", "Noname");
-				data.put("rating", "500");
-			}
-			TemplateHelper.renderTemplate("template.html", data, response.getWriter());
-		} 
-		catch (IOException ignor) {
-		}
-	}
-
-	private void onNothingStatus(String target,String strSessionId, UserDataSet userSession, String strStartServerTime,HttpServletResponse response){
-		boolean moved=false;
-		if (!target.equals("/")){
-			response.setStatus(HttpServletResponse.SC_MOVED_TEMPORARILY);
-			response.addHeader("Location", "/");
-			moved=true;
-		}
-		Cookie cookie1=new Cookie("sessionId", strSessionId);
-		Cookie cookie2=new Cookie("startServerTime",strStartServerTime);
-		response.addCookie(cookie1);
-		response.addCookie(cookie2);
-		if (!moved){
-			sendPage("index.html",userSession,response);
-		}
-	}
-
-	private void onHaveCookieStatus(String target, UserDataSet userSession, HttpServletResponse response){
-		if (target.equals("/")){
-			sendPage("index.html",userSession,response);
-		}
-		else if (target.equals("/reg")){
-			sendPage("reg.html",userSession,response);
-		}
-		else{
-			response.setStatus(HttpServletResponse.SC_MOVED_TEMPORARILY);
-			response.addHeader("Location", "/");
-		}
-	}
-
-	private void onHaveCookieAndPostStatus(String target, String sessionId,UserDataSet userSession,HttpServletRequest request, HttpServletResponse response){
-		String nick=request.getParameter("nick");
-		String password = request.getParameter("password");
-		if ((nick==null)||(password==null)){
-			nick = request.getParameter("regNick");
-			password = request.getParameter("regPassword");
-			if ((nick==null)||(password==null)||(nick.equals(""))||(password.equals(""))||(nick.length()>20)){
-				sendPage(target+".html",userSession,response);
-			}
-			else{
-				password=SHA2.getSHA2(password);
-				response.setStatus(HttpServletResponse.SC_MOVED_TEMPORARILY);
-				response.addHeader("Location", "/wait");
-				userSession.setPostStatus(1);
-				Address to=messageSystem.getAddressByName("DBService");
-				Address from=messageSystem.getAddressByName("UserData");
-				MsgAddUser msg=new MsgAddUser(from,to,sessionId,nick,password);
-				messageSystem.putMsg(to, msg);
-			}
-		}
-		else{
-			password=SHA2.getSHA2(password);
-			response.setStatus(HttpServletResponse.SC_MOVED_TEMPORARILY);
-			response.addHeader("Location", "/wait");
-			userSession.setPostStatus(1);
-			Address to=messageSystem.getAddressByName("DBService");
-			Address from=messageSystem.getAddressByName("UserData");
-			MsgGetUser msg=new MsgGetUser(from,to,sessionId,nick,password);
-			messageSystem.putMsg(to, msg);
-		}
-	}
-
-	private void onWaitingStatus(HttpServletResponse response){
-		sendPage("wait.html",null,response);
-	}
-
-	private void onReadyStatus(String target, String sessionId, UserDataSet userSession,HttpServletResponse response){
-		if(target.equals("/")){
-			UserDataImpl.putLogInUser(sessionId, userSession);
-			sendPage("index.html",userSession,response);			
-		}
-		else if (target.equals("/game")){
-			UserDataImpl.putLogInUser(sessionId, userSession);
-			UserDataImpl.playerWantToPlay(sessionId, userSession);
-			sendPage("game.html",userSession,response);
-		}
-		else if(target.equals("/logout")){
-			response.setStatus(HttpServletResponse.SC_MOVED_TEMPORARILY);
-			response.addHeader("Location", "/");
-			String strSessionId = sessionId=SHA2.getSHA2(String.valueOf(creatorSessionId.incrementAndGet()));
-			Cookie cookie=new Cookie("sessionId", strSessionId);
-			response.addCookie(cookie);
-			UserDataImpl.putSessionIdAndUserSession(sessionId, new UserDataSet());
-		}
-		else if (target.equals("/profile")){
-			sendPage("profile.html",userSession,response);
-		}
-		else{
-			response.setStatus(HttpServletResponse.SC_MOVED_TEMPORARILY);
-			response.addHeader("Location", "/");
-		}
-	}
-
 	public void handle(String target,Request baseRequest,
 			HttpServletRequest request, HttpServletResponse response){
 		prepareResponse(response);
@@ -227,7 +108,7 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 		baseRequest.setHandled(true);
 		if(newUser(sessionId, strStartServerTime)){
 			userSession=new UserDataSet();
-			sessionId=SHA2.getSHA2(String.valueOf(creatorSessionId.incrementAndGet()));
+			sessionId=SHA2.getSHA2(String.valueOf(frontendModel.creatorSessionId.incrementAndGet()));
 			strStartServerTime=UserDataImpl.getStartServerTime();
 			UserDataImpl.putSessionIdAndUserSession(sessionId, userSession);
 		}
@@ -235,9 +116,12 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 			stat=status.haveCookie;
 			userSession=UserDataImpl.getUserSessionBySessionId(sessionId);
 		}
+
+        Status pageStatus;
 		if(!inWeb(target)){
 			if(!isStatic(target)){
-				sendPage("404.html",userSession,response);
+            pageStatus = new NotFound(frontendModel) ;
+            pageStatus.exec(target, sessionId, userSession, request, response, strStartServerTime);
 			}
 			return;	
 		}
@@ -249,26 +133,32 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 				return;
 			}
 			else if (target.equals("/rules")){
-				sendPage("rules.html",userSession, response);
+                pageStatus = new Rules(frontendModel) ;
+                pageStatus.exec(target, sessionId, userSession, request, response, strStartServerTime);
 				return;
 			}
 		}
+		
+		Status userStatus=null;
+		
 		switch(stat){
 		case nothing:
-			onNothingStatus(target, sessionId, userSession,strStartServerTime, response);
+			userStatus = new Nothing(frontendModel);
 			break;
 		case haveCookie:
-			onHaveCookieStatus(target, userSession,response);
+			userStatus = new HaveCookie(frontendModel);
 			break;
 		case haveCookieAndPost:
-			onHaveCookieAndPostStatus(target,sessionId, userSession,request, response);
+			userStatus = new HaveCookieAndPost(frontendModel);
 			break;
 		case waiting:
-			onWaitingStatus(response);
+			userStatus = new Waiting(frontendModel);
 			break;
 		case ready:
-			onReadyStatus(target, sessionId, userSession, response);
+			userStatus = new Ready(frontendModel);
 			break;
 		}
+		
+		userStatus.exec(target, sessionId, userSession, request, response, strStartServerTime);
 	}
 }
