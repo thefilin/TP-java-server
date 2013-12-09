@@ -104,14 +104,12 @@ public class GameSession{
 			return false;
 		if (eating(from_x, from_y, to_x, to_y)){
 			if(!checkEating(from_x, from_y, to_x, to_y)){
-				System.err.println("false4");
 				return false;
 			}
 			changeId=!makeEatingStroke(from_x, from_y, to_x, to_y);
 		}
 		else{
 			if(!makeUsualStroke(from_x, from_y, to_x, to_y)){
-				System.err.println("false5");
 				return false;
 			}
 		}
@@ -184,7 +182,6 @@ public class GameSession{
 			return false;
 		}
 		if(!standartCheck(from_x, from_y, to_x, to_y)){
-			System.err.println("false2");
 			return false;
 		}
 		checker myColor = getPlayerColor(id);

@@ -16,12 +16,7 @@ public class TemplateHelper {
 	public static void init() {
 		try {
 			cfg.setDirectoryForTemplateLoading(new File(System.getProperty("user.dir") + "/static/html"));				
-		} catch (IOException e) {
-			e.printStackTrace();
-			Logger logger = Logger.getLogger(Frontend.class.toString());
-			logger.info("Can't find folder with templates. Shutting down...");
-			System.exit(404);
-		}
+		} catch (IOException e) {}
 
 	}
 
@@ -30,9 +25,7 @@ public class TemplateHelper {
 		try {
 			template = cfg.getTemplate(name);
 			template.process(map, out);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		} catch (Exception e) {}
 	}
 
 	public static void renderTemplate(String name, Writer out) {
@@ -40,9 +33,7 @@ public class TemplateHelper {
 		try {
 			template = cfg.getTemplate(name);
 			template.process(null, out);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		} catch (Exception e) {}
 	}
 
 }
