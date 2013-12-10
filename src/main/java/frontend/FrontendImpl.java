@@ -26,31 +26,10 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 	
 	final private FrontendModel frontendModel;
 
-	enum status {nothing,haveCookie,haveCookieAndPost,waiting,ready}
+	enum status { nothing, haveCookie, haveCookieAndPost, waiting, ready, notFound, rules, admin }
 
 	public FrontendImpl(MessageSystem msgSystem){
 		frontendModel = new FrontendModel(msgSystem);
-	}
-
-
-	private void getStatistic(HttpServletResponse response, UserDataSet userSession){
-		Map<String,String> data= new HashMap<String,String>();
-		String mu=SysInfo.getStat("MemoryUsage");
-		String tm = SysInfo.getStat("TotalMemory");
-		String time=SysInfo.getStat("Time");
-		String ccu = SysInfo.getStat("CCU");
-		data.put("MemoryUsage", mu);
-		data.put("Time", time);
-		data.put("TotalMemory", tm);
-		data.put("CCU", ccu);
-		data.put("page", "admin.html");
-		data.put("id", String.valueOf(userSession.getId()));
-		data.put("nick", String.valueOf(userSession.getNick()));
-		data.put("rating", String.valueOf(userSession.getRating()));
-		try {
-			TemplateHelper.renderTemplate("template.html", data, response.getWriter());
-		} catch (IOException ignor) {
-		}
 	}
 
 	private status getStatus(HttpServletRequest request,String target,status stat,String sessionId){
@@ -66,13 +45,6 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 				stat=status.waiting;
 		}
 		return stat;
-	}
-
-	private void prepareResponse(HttpServletResponse response){
-		response.setContentType("text/html;charset=utf-8");
-		response.setStatus(HttpServletResponse.SC_OK);
-		response.setHeader("Cache-Control","no-store, no-cache, must-revalidate");
-		response.setHeader("Expires", TimeHelper.getGMT());
 	}
 
 	private boolean inWeb(String target){
@@ -92,6 +64,13 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 		return((strSessionId==null)||(strStartServerTime==null)
 				||(!UserDataImpl.checkServerTime(strStartServerTime))
 				||(!UserDataImpl.containsSessionId(strSessionId)));
+	}
+
+	private void prepareResponse(HttpServletResponse response){
+		response.setContentType("text/html;charset=utf-8");
+		response.setStatus(HttpServletResponse.SC_OK);
+		response.setHeader("Cache-Control","no-store, no-cache, must-revalidate");
+		response.setHeader("Expires", TimeHelper.getGMT());
 	}
 
 	public void handle(String target,Request baseRequest,
@@ -114,29 +93,27 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 			userSession=UserDataImpl.getUserSessionBySessionId(sessionId);
 		}
 
-        Status pageStatus;
 		if(!inWeb(target)){
 			if(!isStatic(target)){
-            pageStatus = new NotFound(frontendModel) ;
-            pageStatus.exec(target, sessionId, userSession, request, response, strStartServerTime);
-			}
-			return;	
-		}
-		userSession.visit();
-		stat=getStatus(request, target, stat, sessionId);
-		if (stat!=status.haveCookieAndPost){
-			if(target.equals("/admin")){
-				getStatistic(response,userSession);
-				return;
-			}
-			else if (target.equals("/rules")){
-                pageStatus = new Rules(frontendModel) ;
-                pageStatus.exec(target, sessionId, userSession, request, response, strStartServerTime);
-				return;
+				stat = status.notFound;
 			}
 		}
 		
-		Status userStatus=null;
+		userSession.visit();
+		if (stat != status.notFound) {
+			stat = getStatus(request, target, stat, sessionId);			
+		}
+
+		if (stat!=status.haveCookieAndPost){
+			if (target.equals("/admin")) {
+				stat = status.admin;
+			}
+			else if (target.equals("/rules")) {
+				stat = status.rules;
+			}
+		}
+		
+		Status userStatus = null;
 		
 		switch(stat){
 		case nothing:
@@ -153,6 +130,15 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 			break;
 		case ready:
 			userStatus = new Ready(frontendModel);
+			break;
+		case notFound:
+			userStatus = new NotFound(frontendModel);
+			break;
+		case rules:
+			userStatus = new Rules(frontendModel);
+			break;
+		case admin:
+			userStatus = new Admin(frontendModel);
 			break;
 		}
 		
