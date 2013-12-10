@@ -1,6 +1,5 @@
 package frontend;
 
-import frontend.MsgRemoveUserFromGM;
 import gameMechanic.gameCreating.MsgCreateGames;
 
 import java.util.HashMap;

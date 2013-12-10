@@ -2,8 +2,6 @@ package frontend;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-import frontend.MsgAddUser;
-import frontend.MsgGetUser;
 import base.Abonent;
 import base.Address;
 import base.MessageSystem;
