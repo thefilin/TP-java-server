@@ -24,4 +24,17 @@ public class NothingTest {
         verify(mockedResponse).setStatus(HttpServletResponse.SC_MOVED_TEMPORARILY);
         verify(mockedResponse).addHeader("Location", "/");
     }
+    
+    @Test
+    public void sendPageTest() {
+        HttpServletResponse mockedResponse = mock(HttpServletResponse.class);
+        Nothing nothing = new Nothing(new FrontendModel(new MessageSystemImpl()));
+        Nothing spyNothing = spy(nothing);
+        doNothing().when(spyNothing).sendPage("index.html", null, mockedResponse);
+        spyNothing.exec("/", null, null, null, mockedResponse, null);
+        verify(spyNothing).sendPage("index.html", null, mockedResponse);
+    
+    }
+    
+    
 }
